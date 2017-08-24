@@ -102,10 +102,11 @@ button:hover {opacity: 0.8;}
 /*****************************************************************************/
 
 /*Fonts and widths for every page*/
-#templatesBody, #qualityBody, #scriptsBody, #emailBody, #LSCBody, #CI {
+#templatesBody, #qualityBody, #scriptsBody, #LSCBody, #CI {
   font-family: "Segoe UI",Arial,sans-serif;
   max-width: 1000px;
 }
+#emailBody, #backEndBody{font-family: Calibri; font-size: 12px;}
 .templates, .scoreCard, .scripts, .email, .LSC, .contact-info {
   width: auto;
   padding-left: 180px;
