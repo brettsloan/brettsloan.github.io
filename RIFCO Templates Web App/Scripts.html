@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RIFCO Templates</title>
+    <div id="CSSLinks">
+      <link rel="stylesheet" href="RifcoStyleSheet.css">
+    </div>
+  </head>
+  <body id=scriptsBody>
+    <div class="rifco-header" id="top">
+      <header role="banner">
+        <a><img alt="Rifco"
+        src="http://www.rifco.net/wp-content/uploads/2014/04/header-logo-rifco.png">
+        </a>
+      </header>
+    </div>
+    <div class="topNav">
+      <h1><a href="ContactInformation.html">Home</a></h1>
+      <h2>MENU &#9776;</h2>
+      <div class="accordion">
+        DoneDone Templates &nbsp <span style="font-size:11px;">▼</span>
+      </div>
+      <div class="panel">
+        <a href="DoneDoneTemplates.html#Ext">Extension</a>
+        <a href="DoneDoneTemplates.html#SPW">Single Payment Withdrawal</a>
+        <a href="DoneDoneTemplates.html#CPA">Change Payment Amount</a>
+        <a href="DoneDoneTemplates.html#SPM">Single Payment Move</a>
+        <a href="DoneDoneTemplates.html#SPC">Single Payment Cancel</a>
+        <a href="DoneDoneTemplates.html#PDDC">Due Date Change</a>
+        <a href="DoneDoneTemplates.html#FV">Field Visit</a>
+        <a href="DoneDoneTemplates.html#CEFT">Cancel EFT</a>
+        <a href="DoneDoneTemplates.html#BT">Budget Template</a>
+        <a href="DoneDoneTemplates.html#TLM">Temp Loan Mod</a>
+        <a href="DoneDoneTemplates.html#SBR">Small Balance Re-Am</a>
+      </div>
+      <div class="menu">
+        <a href="QualityScoreCard.html">Quality Score Card</a>
+        <a href="Scripts.html">Blue Pay/Frequency Change Scripts</a>
+        <div class="accordion">
+          Email Templates &nbsp <span style="font-size:11px;">▼</span>
+        </div>
+        <div class="panel">
+          <a href="emailTemplates.html#ROCBM">Request for Contact</a>
+          <a href="emailTemplates.html#EVTBM">Verification Template</a>
+          <a href="emailTemplates.html#BTBM">Budget Template</a>
+          <a href="emailTemplates.html#CIBM">Contact Information</a>
+          <a href="emailTemplates.html#OBIBM">Online Banking Instructions</a>
+          <a href="emailTemplates.html#WUIBM">Western Union Instructions</a>
+          <a href="emailTemplates.html#PRBM">Payment Reminder Template</a>
+          <a href="emailTemplates.html#BABM">Broken Arrangement Template</a>
+        </div>
+        <div class="accordion">
+          Back End Email Templates &nbsp <span style="font-size:11px;">▼</span>
+        </div>
+        <div class="panel">
+          <a href="emailTemplates.html#EOBM">1-29 DPD #1</a>
+          <a href="emailTemplates.html#ETBM">1-29 DPD #2</a>
+          <a href="emailTemplates.html#ETRBM">30-45 DPD #3</a>
+          <a href="emailTemplates.html#EFBM">30-45 DPD #4</a>
+          <a href="emailTemplates.html#EFVBM">46-55 DPD #5</a>
+          <a href="emailTemplates.html#ESBM">46-55 DPD #6</a>
+          <a href="emailTemplates.html#ESVBM">56-65 DPD #7</a>
+          <a href="emailTemplates.html#EEBM">66-75 DPD #8</a>
+          <a href="emailTemplates.html#ENBM">76+ DPD #9</a>
+        </div>
+        <a href="LegalStatusCodes.html">Legal Status Codes</a>
+        <a href="TextOptIn.html">Texting Service Opt In</a>
+      </div>
+    </div>
+    <div class="scripts">
+      <h1>Debit Script</h1>
+        <p>You, (Client’s name), authorize for a single debit entry
+         to your debit card ending in **** through BluePay to make
+         a onetime payment in the amount of $$ to Rifco National Auto Finance
+         account # (LC Contract ID). Your total payment of $$
+         will be dated on DD/MM/YYYY. To authorize this payment,
+         please state your first and last name.</p>
+      <h1>Frequency Change Script</h1>
+        <p>You are giving Rifco permission to charge a fee of $75
+         to process the requested frequency change.
+         This fee will be interest free and will be added to the end
+         of your contract. Do you acknowledge this adjustment?</p>
+      <h1>Frequency Change Formulas</h1>
+        <ul>
+          <li>Monthly - BW: 12*(payment)/26</li>
+          <li>Monthly - SM: (payment)/2</li>
+          <li>BW - Monthly: 26*(payment)/12</li>
+          <li>BW - SM: 26*(payment)/24</li>
+          <li>SM - Monthly: (payment)*2</li>
+          <li>SM - BW: 24*(payment)/26</li>
+        </ul>
+      <h1>Frequency Change & Due Date Change Guidelines:</h1>
+        <h2>Due Date Change (DDC):</h2>
+          <p class="subP">The process of permanently moving a payment
+            schedule forward or backwards a set number of days while
+            maintaining the same frequency.</p>
+        <h2>Frequency Change (FC):</h2>
+          <p class="subP">The process of permanently changing the frequency of a
+            payment schedule
+            (biweekly, monthly, or semi-monthly payment schedule).</p>
+        <h2>DDC Rules/Guidelines:</h2>
+          <ul class="subL">
+            <li>No administration fee is charged.
+            </li>
+            <li>The future requested payment date cannot go past
+            the client’s next or previous amortized due date
+            (the original schedule). In other words, the client cannot
+            move their schedule more than a billing period ahead.
+            </li>
+          </ul>
+        <h2>FC Rules/Guidelines:</h2>
+          <ul class="subL">
+          <li>Account must be up to date.</li>
+          <li>In order to finalize the FC, the first payment
+             on the new schedule must clear. If it does not,
+             the administration fee will not be charged
+             and the frequency of the account will revert back
+             to its original status.
+           </li>
+           <li>The New Due Date must be greater than 10 BUSINESS days
+             from the previous payment on the old frequency.
+           </li>
+           <li>An administration fee of $75.00 will be charged,
+             the administration fee script must be read to the client.
+           </li>
+        </ul>
+    <div id=javascriptlinks>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type="text/javascript" src="RifcoJS.js"></script>
+    </div>
+  </body>
+</html>

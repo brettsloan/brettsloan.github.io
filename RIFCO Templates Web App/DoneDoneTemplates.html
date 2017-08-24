@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RIFCO Templates</title>
+    <div id="CSSLinks">
+      <link rel="stylesheet" href="RifcoStyleSheet.css">
+      <link rel="stylesheet" href="..\Jquery\jquery-ui.css">
+      <link rel="stylesheet" href="..\Jquery\jquery-ui.theme.css">
+      <link rel="stylesheet" href="..\Jquery\jquery-ui.structure.css">
+    </div>
+  </head>
+  <body id="templatesBody" onload="fillBlanks(); return false;">
+    <div class="rifco-header" id="top">
+      <header role="banner">
+        <a><img alt="Rifco"
+        src="http://www.rifco.net/wp-content/uploads/2014/04/header-logo-rifco.png">
+        </a>
+      </header>
+    </div>
+    <div class="topNav">
+      <h1><a href="ContactInformation.html">Home</a></h1>
+      <h2>MENU &#9776;</h2>
+      <div class="accordion">
+        DoneDone Templates &nbsp <span style="font-size:11px;">▼</span>
+      </div>
+      <div class="panel">
+        <a href="DoneDoneTemplates.html#Ext">Extension</a>
+        <a href="DoneDoneTemplates.html#SPW">Single Payment Withdrawal</a>
+        <a href="DoneDoneTemplates.html#CPA">Change Payment Amount</a>
+        <a href="DoneDoneTemplates.html#SPM">Single Payment Move</a>
+        <a href="DoneDoneTemplates.html#SPC">Single Payment Cancel</a>
+        <a href="DoneDoneTemplates.html#PDDC">Due Date Change</a>
+        <a href="DoneDoneTemplates.html#FV">Field Visit</a>
+        <a href="DoneDoneTemplates.html#CEFT">Cancel EFT</a>
+        <a href="DoneDoneTemplates.html#BT">Budget Template</a>
+        <a href="DoneDoneTemplates.html#TLM">Temp Loan Mod</a>
+        <a href="DoneDoneTemplates.html#SBR">Small Balance Re-Am</a>
+      </div>
+      <div class="menu">
+        <a href="QualityScoreCard.html">Quality Score Card</a>
+        <a href="Scripts.html">Blue Pay/Frequency Change Scripts</a>
+        <div class="accordion">
+          Email Templates &nbsp <span style="font-size:11px;">▼</span>
+        </div>
+        <div class="panel">
+          <a href="emailTemplates.html#ROCBM">Request for Contact</a>
+          <a href="emailTemplates.html#EVTBM">Verification Template</a>
+          <a href="emailTemplates.html#BTBM">Budget Template</a>
+          <a href="emailTemplates.html#CIBM">Contact Information</a>
+          <a href="emailTemplates.html#OBIBM">Online Banking Instructions</a>
+          <a href="emailTemplates.html#WUIBM">Western Union Instructions</a>
+          <a href="emailTemplates.html#PRBM">Payment Reminder Template</a>
+          <a href="emailTemplates.html#BABM">Broken Arrangement Template</a>
+        </div>
+        <div class="accordion">
+          Back End Email Templates &nbsp <span style="font-size:11px;">▼</span>
+        </div>
+        <div class="panel">
+          <a href="emailTemplates.html#EOBM">1-29 DPD #1</a>
+          <a href="emailTemplates.html#ETBM">1-29 DPD #2</a>
+          <a href="emailTemplates.html#ETRBM">30-45 DPD #3</a>
+          <a href="emailTemplates.html#EFBM">30-45 DPD #4</a>
+          <a href="emailTemplates.html#EFVBM">46-55 DPD #5</a>
+          <a href="emailTemplates.html#ESBM">46-55 DPD #6</a>
+          <a href="emailTemplates.html#ESVBM">56-65 DPD #7</a>
+          <a href="emailTemplates.html#EEBM">66-75 DPD #8</a>
+          <a href="emailTemplates.html#ENBM">76+ DPD #9</a>
+        </div>
+        <a href="LegalStatusCodes.html">Legal Status Codes</a>
+        <a href="TextOptIn.html">Texting Service Opt In</a>
+      </div>
+    </div>
+    <div class="templates">
+      <h1>REMEMBER WE NEED 8-11 DAYS FOR ALL CHANGES</h1>
+      <form id="Ext">
+        <h1>Extension Template</h1>
+        <p>Date Submitted:<input type="text" class="date calendar"/><br>
+           Client Name:<input type="text"/><br>
+           Account Number:<input type="text"/><br>
+           Payment Date Extending:<input type="text" class="calendar"/><br>
+           Regular Payment Amount:<input type="text"/><br>
+           Payment Frequency:<input type="text"/><br>
+           Extension Payment Amount:<input type="text"/><br>
+           Date of Extension Payment:<input type="text" class="calendar"/><br>
+           Days Over Due:<input type="text"/><br>
+           Loan Effective Date:<input type="text" class="calendar"/><br>
+           Date Of Last Extension:<input type="text" value="NA" class="calendar"/><br>
+           Requested By:<input type="text" class="name"/><br>
+           Approved By:<input id="name" type="text"/><br>
+           Approval Date:<input type="text"/></p>
+      </form>
+        <button class="sub" data-clipboard-action="copy"
+        data-clipboard-target="#Ext">Copy</button>
+      <form id="SPW">
+        <h1>Single Payment Withdrawal</h1>
+        <p>Date Submitted: <input type="text" class="date calendar"/><br>
+           Client Name: <input type="text"/><br>
+           Account Number: <input type="text"/><br>
+           Due Date: <input type="text" class="calendar"/><br>
+           Payment Amount: <input type="text"/><br>
+           Requested By: <input type="text" class="name"/></p>
+      </form>
+        <button class="sub" data-clipboard-action="copy"
+        data-clipboard-target="#SPW">Copy</button>
+      <form id="CPA">
+        <h1>Change Payment Amount</h1>
+        <p>Date Submitted: <input type="text" class="date calendar"/><br>
+           Client Name: <input type="text"/><br>
+           Account Number: <input type="text"/><br>
+           Due Date: <input type="text" class="calendar"/><br>
+           Payment Amount: <input type="text"/><br>
+           Requested By: <input type="text" class="name"/></p>
+      </form>
+        <button class="sub" data-clipboard-action="copy"
+        data-clipboard-target="#CPA">Copy</button>
+      <form id="SPM">
+        <h1>Single Payment Move</h1>
+        <p>Date Submitted: <input type="text" class="date calendar"/><br>
+           Client Name: <input type="text"/><br>
+           Account Number: <input type="text"/><br>
+           Current Due Date: <input type="text" class="calendar"/><br>
+           New Due Date: <input type="text" class="calendar"/><br>
+           Payment Amount: <input type="text"/><br>
+           Requested By: <input type="text" class="name"/></p>
+      </form>
+        <button class="sub" data-clipboard-action="copy"
+        data-clipboard-target="#SPM">Copy</button>
+      <form id="SPC">
+        <h1>Single Payment Cancel</h1>
+        <p>Date Submitted: <input type="text" class="date calendar"/><br>
+           Client Name: <input type="text"/><br>
+           Account Number: <input type="text"/><br>
+           Payment Date to Cancel: <input type="text" class="calendar"/><br>
+           Payment Amount: <input type="text"/><br>
+           Requested By: <input type="text" class="name"/></p>
+      </form>
+        <button class="sub" data-clipboard-action="copy"
+        data-clipboard-target="#SPC">Copy</button>
+      <form id="PDDC">
+        <h1>Permanent Due Date Change</h1>
+        <p>Date Submitted: <input type="text" class="date calendar"/><br>
+           Client Name: <input type="text"/><br>
+           Account Number: <input type="text"/><br>
+           Current Due Date: <input type="text" class="calendar"/><br>
+           Current Payment Frequency: <input type="text"/><br>
+           New Due Date: <input type="text" class="calendar"/><br>
+           New Payment Frequency: <input type="text"/><br>
+           Payment Amount: <input type="text"/><br>
+           EFT?:<input type="text" value="Yes/No"/><br>
+           Still Pull for: <input type="text" class="calendar"/><br>
+           Requested By: <input type="text" class="name"/></p>
+      </form>
+        <p>**Max 28 days moved on Monthly accounts<br>
+          **Max 13 days moved on BW/SM accounts</p>
+        <button class="sub" data-clipboard-action="copy"
+        data-clipboard-target="#PDDC">Copy</button>
+      <form id="FV">
+        <h1>Field Visit Template</h1>
+        <p>Date Submitted: <input type="text" class="date calendar"/><br>
+           Client Name: <input type="text"/><br>
+           Account Number: <input type="text"/><br>
+           Company: <input type="text" value="IFS/Schuswap (BC Only)"/><br>
+           Quote: <input type="text"/><br>
+           Requested By: <input type="text" class="name"/><br>
+           Approved By: <input type="text"/><br>
+           Date Approved: <input type="text"/><br>
+           Estimated Cost: <input type="text"/></p>
+      </form>
+        <button class="sub" data-clipboard-action="copy"
+        data-clipboard-target="#FV">Copy</button>
+      <form id="CEFT">
+        <h1>Cancel EFT Template</h1>
+        <p>Date Submitted: <input type="text" class="date calendar"/><br>
+           Client Name: <input type="text"/><br>
+           Account Number: <input type="text"/><br>
+           Start Date: <input type="text" class="calendar"/><br>
+           Still pull payment for: <input type="text" class="calendar"/><br>
+           Keep banking on file: <input type="text" value="Yes/No"/><br>
+           Reason for cancellation: <input type="text" value="Client has withdrawn consent"/><br>
+           Requested By: <input type="text" class="name"/></p>
+      </form>
+      <p>**5 days needed for banking changes
+        <button class="sub" data-clipboard-action="copy"
+        data-clipboard-target="#CEFT">Copy</button>
+      <form id="BT">
+        <h1>Budget Template</h1>
+        <p>INCOME<br>
+           B Income: <input type="text"/><br>
+           Cojo Income: <input type="text"/><br>
+           Spouse Income: <input type="text"/><br>
+           Child Support: <input type="text"/><br>
+           Child Tax: <input type="text"/><br>
+           Other: <input type="text"/><br><br>
+           TOTAL: <input id="totalOne" type="text" oninput="eiTotal();"/><br><br><br>
+           EXPENSES<br>
+           Mortgage: <input type="text"/><br>
+           Rent: <input type="text"/><br>
+           Hydro: <input type="text"/><br>
+           City (garbage/water): <input type="text"/><br>
+           Cable/Phone/Internet: <input type="text"/><br>
+           Heating: <input type="text"/><br>
+           Groceries: <input type="text"/><br>
+           Gas: <input type="text"/><br>
+           Car Payment: <input type="text"/><br>
+           2nd Car Payment: <input type="text"/><br>
+           Insurance: <input type="text"/><br>
+           Child Care: <input type="text"/><br>
+           Child Support: <input type="text"/><br>
+           Other: <input type="text"/><br>
+           Personal: <input type="text"/><br><br>
+           TOTAL: <input id="totalTwo" type="text" oninput="eiTotal();"/><br><br>
+           Expendable Income: <input id="EI" type="text" oninput="eiTotal();"/><br></p>
+      </form>
+        <button class="sub" data-clipboard-action="copy"
+        data-clipboard-target="#BT">Copy</button>
+      <form id="TLM">
+        <h1>Loan Modification Template</h1>
+        <p>Date Submitted: <input type="text" class="date calendar"/><br>
+           Client Name: <input type="text"/><br>
+           Account Number: <input type="text"/><br>
+           Last Payment Posted: <input type="text" class="calendar"/><br>
+           First Modified Payment: <input type="text" class="calendar"/><br>
+           Number of Months: <input type="text"/><br>
+           Regular Payment Amount: <input type="text"/><br>
+           Modified Payment Amount: <input type="text"/><br>
+           Billing Frequency: <input type="text"/><br>
+           Have EFT's Been CXLD?: <input type="text" value="Yes/No"/><br>
+           Requested By: <input type="text" class="name"/></p>
+      </form>
+        <h1>TLM LC Template</h1>
+        <p>Request TLM<br><br>
+          <><><><><><> <br>
+          RFD: <input type="text"/><br>
+          PTP: <input type="text"/><br>
+          Term: <input type="text"/><br> 
+          New Payment Amount: <input type="text"/><br> 
+          Start Date 1st PMT: <input type="text" class="calendar"/><br></p>
+        <button class="sub" data-clipboard-action="copy"
+        data-clipboard-target="#TLM">Copy</button>
+      <form id="SBR">
+        <h1>Small Balance Re-Am</h1>
+        <p>Date Submitted: <input type="text" class="date calendar"/><br>
+           Client Name: <input type="text"/><br>
+           Account Number: <input type="text"/><br>
+           Client Notified: <input type="text" value="Yes/No"/><br>
+           Current Balance: <input type="text"/><br>
+           Fees: <input type="text"/><br>
+           Total Amount of Re-Am: <input type="text"/><br>
+           Start Date: <input type="text" class="calendar"/><br>
+           # of Payments to Reschedule: <input type="text"/><br>
+           Amount of Payment: <input type="text"/><br>
+           Payment Type: <input type="text"/><br>
+           Reason for re-am: <input type="text"/><br>
+           Requested By: <input type="text" class="name"/><br>
+           Management Approval: <input type="text"/></p>
+      </form>
+        <button class="sub" data-clipboard-action="copy"
+        data-clipboard-target="#SBR">Copy</button>
+    </div>
+    <div id=javaScriptLinks>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+      <script src="..\Jquery\jquery-ui.js"></script>
+      <script src="RifcoJS.js"></script>
+      <script>
+      var clipboard = new Clipboard('.sub');
+
+      clipboard.on('success', function(e) {
+          console.log(e);
+      });
+      clipboard.on('error', function(e) {
+          console.log(e);
+          alert("Error");
+      });
+      </script>
+    </div>
+  </body>
+</html>
