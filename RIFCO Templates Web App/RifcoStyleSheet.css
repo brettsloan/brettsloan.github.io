@@ -27,7 +27,7 @@
 
 /*Login and submit button*/
 button.sub {
-  background: linear-gradient(to bottom, rgba(9,176,232,1) 0%,
+  background: linear-gradient(to bottom, rgba(9,176,232,1) 0%, 
   rgba(13,121,171,1) 100%);;
   color: #FFFFFF! important;
   font-family:"Segoe UI",Arial,sans-serif;
