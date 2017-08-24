@@ -39,6 +39,8 @@ h1 {font-size: 50px;}
 #RIFCObutton:hover {opacity: 0.8;}
 .projectButtons a {color: #FFF; text-decoration: none;}
 .projectButtons {padding-bottom: 10px;}
+
+
 /*ICONS*/
 .fa {
     padding: 15px;
@@ -54,8 +56,6 @@ h1 {font-size: 50px;}
 .fa-github {background: grey; color: white;}
 .logos{font-size: 40px;}
 
-#aboveFooter {
-}
 
 /*FOOTER*/
 .footer {
