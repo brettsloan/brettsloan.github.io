@@ -1,0 +1,184 @@
+/*LOGIN INFO*/
+
+/*Login Content*/
+.modal {
+  font: 22px 'Lato', sans-serif;
+  color: #6D7371;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+/*Logo*/
+.avatar {margin-left: -39px;}
+
+/*Username title*/
+#usr{display: block;}
+
+/* Login input fields */
+#usrnme{
+  font-family:"Segoe UI",Arial,sans-serif;
+  width: 100%;
+  padding: 15px 7px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/*Login and submit button*/
+button.sub {
+  background: linear-gradient(to bottom, rgba(9,176,232,1) 0%, 
+  rgba(13,121,171,1) 100%);;
+  color: #FFFFFF! important;
+  font-family:"Segoe UI",Arial,sans-serif;
+  font-weight: 300;
+  width: 100%;
+  font-size: 16px;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  margin: 7px 0 30px 0;
+  text-align: center;
+}
+button:hover {opacity: 0.8;}
+
+/*****************************************************************************/
+
+/*HEADER (SAME FOR ALL PAGES)*/
+
+/*Rifco Banner*/
+.rifco-header a {margin-left: 140px;}
+/*SideBar Menu (named topNav??)*/
+.topNav {
+  font-family: "Segoe UI",Arial,sans-serif;
+  font-size: 13px;
+  text-align: center;
+  height: 100%;
+  width: 180px;
+  background: linear-gradient(to bottom, rgba(9,176,232,1) 0%,
+  rgba(13,121,171,1) 100%);;
+  color: #FFF;
+  position: fixed;
+  margin-left: -8px;
+  margin-top: -170px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.topNav h2 {font: 25px 'Lato', sans-serif;}
+.topNav a {
+  padding: 5px;
+  color: #FFF;
+  text-decoration: none;
+  display: block;
+}
+.topNav a:hover {background-color: #00577d; border-radius: 5px;}
+
+/*DD Template and Email Template Drop Downs*/
+.accordion {padding: 5px; cursor:pointer;}
+.accordion:hover {background-color: #00577d; border-radius: 5px;}
+
+/*Dropped down info*/
+.panel {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-size: 13px;
+  text-align: left;
+  width: 183px;
+  background: linear-gradient(to bottom, rgba(9,176,232,1) 0%,
+  rgba(13,121,171,1) 100%);;
+}
+.panel a {
+  display: block;
+  color: #FFF;
+  text-decoration: none;
+  padding: 5px;
+  border-bottom: 1px solid #00577d;
+}
+.panel a.active {background-color: #00577d; color: #FFFFFF;}
+.panel a:hover:not(.active) {background-color: #00577d; color: #FFFFFF;}
+/*****************************************************************************/
+
+/*Fonts and widths for every page*/
+#qualityBody, #scriptsBody, #LSCBody, #CI {
+  font-family: "Segoe UI",Arial,sans-serif;
+  max-width: 1000px;
+}
+#templatesBody {
+  max-width: 800px;
+}
+#emailBody{font-family: Calibri; font-size: 12px;}
+.templates, .scoreCard, .scripts, .email, .LSC, .contact-info {
+  width: auto;
+  padding-left: 180px;
+}
+ h1 {font: 22px 'Lato', sans-serif; color: #00577d;}
+ p {font-size: 16px;}
+ .templates h1, .scoreCard h1, .scripts h1, .email h1 {text-align: center;}
+ iframe {width: 250px; height: 450px; border: none; margin-left: -7px;}
+/*****************************************************************************/
+
+/*----DONE DONE TEMPLATES PAGE----*/
+
+/*Template Titles*/
+.templates h1 {margin-right: 25%; clear: both;}
+
+textarea {
+border-style: none;
+font-family: "Segoe UI",Arial,sans-serif;
+font-size: 14px;
+}
+
+/*Template Submit Button*/
+.templates button{
+  padding: 6px 25px;
+  width: 170px;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+/*****************************************************************************/
+
+/*QUALITY SCORE CARD PAGE*/
+
+.score {text-align: center; border-bottom: 1px solid black;}
+.scoreCard em {color: #00577d;}
+.lightGrey {background-color: lightGrey; border: 4px solid lightGrey;}
+
+/*****************************************************************************/
+
+/*SCRIPTS PAGE*/
+
+.scripts h2 {
+  background-color: lightGrey;
+  text-align: center;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.subP, .subL {margin-left: 20px; margin-right: 20px;}
+
+/*****************************************************************************/
+
+/*EMAIL TEMPLATE PAGE*/
+
+.email button {margin-left: 25%; max-width: 50%;}
+
+/*****************************************************************************/
+
+/*LEGAL STATUS CODES PAGE*/
+
+table {border-collapse: collapse; border: 1px solid black;}
+tr:nth-child(even) {background-color: lightGrey;}
+th {background-color: #90c3d4; border-bottom: 1px solid black;}
+td {border-bottom: 1px solid black; padding: 5px;}
+td:nth-child(1){width: 175px;}
+td:nth-child(3) {text-align: center;}
+
+/*****************************************************************************/
+
+.POR {padding-left: 180px;}
+.POR button {width: 270px;}
+.POR a::active{color: #FFF;}
+.POR p {font-family: Calibri; font-size: 16px;}
