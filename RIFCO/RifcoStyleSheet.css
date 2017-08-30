@@ -64,7 +64,6 @@ button:hover {opacity: 0.8;}
   margin-top: -170px;
   overflow: auto;
   overflow-x: hidden;
-  cursor: pointer;
 }
 .topNav h2 {font: 25px 'Lato', sans-serif;}
 .topNav a {
@@ -76,7 +75,7 @@ button:hover {opacity: 0.8;}
 .topNav a:hover {background-color: #00577d; border-radius: 5px;}
 
 /*DD Template and Email Template Drop Downs*/
-.accordion {padding: 5px;}
+.accordion {padding: 5px; cursor:pointer;}
 .accordion:hover {background-color: #00577d; border-radius: 5px;}
 
 /*Dropped down info*/
@@ -102,9 +101,12 @@ button:hover {opacity: 0.8;}
 /*****************************************************************************/
 
 /*Fonts and widths for every page*/
-#templatesBody, #qualityBody, #scriptsBody, #LSCBody, #CI {
+#qualityBody, #scriptsBody, #LSCBody, #CI {
   font-family: "Segoe UI",Arial,sans-serif;
   max-width: 1000px;
+}
+#templatesBody {
+  max-width: 800px;
 }
 #emailBody{font-family: Calibri; font-size: 12px;}
 .templates, .scoreCard, .scripts, .email, .LSC, .contact-info {
@@ -122,24 +124,18 @@ button:hover {opacity: 0.8;}
 /*Template Titles*/
 .templates h1 {margin-right: 25%; clear: both;}
 
-/*Template questions*/
-.templates p {line-height: 25px;}
-
-/*Template Input fields*/
-.templates input[type=text]{
-  border: 1px solid grey;
-  padding: 2.5px;
-  margin-right: 25%;
-  float: right;
-  clear: right;
+textarea {
+border-style: none;
+font-family: "Segoe UI",Arial,sans-serif;
+font-size: 14px;
 }
+
 /*Template Submit Button*/
 .templates button{
   padding: 6px 25px;
   width: 170px;
   margin-right: 25%;
-  clear: both;
-  float: right;
+  margin-left: 25%;
 }
 
 /*****************************************************************************/
@@ -177,7 +173,12 @@ table {border-collapse: collapse; border: 1px solid black;}
 tr:nth-child(even) {background-color: lightGrey;}
 th {background-color: #90c3d4; border-bottom: 1px solid black;}
 td {border-bottom: 1px solid black; padding: 5px;}
-td:nth-child(1){width: 125px;}
+td:nth-child(1){width: 175px;}
 td:nth-child(3) {text-align: center;}
 
 /*****************************************************************************/
+
+.POR {padding-left: 180px;}
+.POR button {width: 270px;}
+.POR a::active{color: #FFF;}
+.POR p {font-family: Calibri; font-size: 16px;}
