@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="DarrenStyleSheet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="demoraesmusic.js"></script>
+  </head>
+  <body>
+    <div class="holder">
+      <div class="headerTitle">
+        <h2>Music Lessons<br>Darren Demoraes</h2>
+        <div class="row">
+          <div class="col-12 headerMenu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="AboutPage.html">About</a></li>
+              <li><a href="ContactPage.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row wrapper">
+        <div class="col-12 content">
+          <h2>Contact</h2>
+          <p>Text or call: 905-906-7354</p>
+          <p>Email: darren.demoraes@gmail.com</p>
+          <p>Address: Sunderland, Ontario</p>
+        </div>
+      </div>
+      <div>
+        <input class="formButton" type="button" name="book" value="Book Now!">
+      </div>
+      <div class="row wrapper" id="email">
+        <div class="closeButton" onclick="emailForm();">&#10006;</div>
+        <h2>Booking Lessons</h2>
+        <form method="post" name="myemailform" action="form-to-email.php" onsubmit="thankYou()">
+          <input type="text" placeholder="NAME" name="name" required>
+          <input type="email" placeholder="EMAIL" name="email">
+          <textarea placeholder="MESSAGE (Please include the type of lessons you are booking for and the best way to reach you. Thank you)" name="message" required></textarea>
+          <input type="submit" name="submit" value="Send Form">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

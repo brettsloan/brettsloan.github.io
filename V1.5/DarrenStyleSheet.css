@@ -1,0 +1,237 @@
+/*Phones and small screens*/
+@media only screen and (max-width: 767px){
+[class*="col-"] {width: 100%;}
+
+body {
+  vertical-align: middle;
+  background-image: url(background.jpeg);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%),url(background.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #595959;
+}
+
+.headerTitle {
+  width: 100%;
+  position: fixed;
+  font-family: "Comfortaa",cursive;
+  margin-top: -300px;
+  margin-left: -10px;
+}
+
+.headerTitle h2 {
+  float: right;
+  color: #252625;
+  font-size: 30px;
+  font-weight: 100;
+  margin: 5px;
+}
+
+.headerMenu {
+  margin-top: 7em;
+  background: #252625;
+  opacity: 0.65;
+  padding: 5px 0 5px 0;
+  filter: alpha(opacity=65); /* For IE8 and earlier */
+}
+
+.headerMenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.headerMenu li {font-size: 29px;}
+
+.headerMenu a {color: #eaeaea; text-decoration: none; padding: 5px 60px;}
+
+.headerMenu a:hover {
+  background-color: #eaeaea;
+  color: #252625;
+  opacity: 0.65;
+  filter: alpha(opacity=65); /* For IE8 and earlier */
+}
+
+.wrapper {
+  font-family: 'Quicksand', sans-serif;
+  color: #eaeaea;
+  font-size: 20px;
+  text-align: center;
+}
+
+.content {margin-top: 300px; max-width: 50%; margin-left: 25%;}
+
+.formButton, input[type="submit"] {
+  font-family: "Comfortaa",cursive;
+  color: #252625;
+  font-size: 19px;
+  border-radius: 8px;
+}
+
+#email {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left:50%;
+  padding-top: 25%;
+  width: 100%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  background-color: rgb(0, 0, 0, 0.9);
+  min-height: 100%;
+}
+
+.closeButton{
+  border: solid #eaeaea 2px;
+  border-radius: 50%;
+  max-width: 32.5px;
+  margin-left: 75%;
+}
+
+.closeButton:hover {
+  color: #af0000;
+  border-color: #af0000;
+}
+input, textarea {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin-top: 0.7em;
+  display: block;
+  color: #252625;
+  width: 100%;
+  padding: 5px;
+  max-width: 50%;
+  margin-left: 25%;
+  border-radius: 8px;
+}
+textarea {height: 80px; resize: none;}
+}
+
+
+
+/*-------------------------------------------------------------------------------------*/
+/*iPad and bigger*/
+
+@media only screen and (min-width: 768px) {
+
+* {box-sizing: border-box;}
+.row::after {content: ""; clear: both; display: table;}
+[class*="col-"] {float: left;}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+html {margin: auto; height: 100%;}
+
+body {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  background-image: url(background.jpeg);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%),url(background.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #595959;
+}
+
+.holder {min-height: 100%;}
+
+.headerTitle {width: 100%; position: fixed; font-family: "Comfortaa",cursive;}
+
+.headerTitle h2 {
+  float: right;
+  color: #252625;
+  font-size: 30px;
+  font-weight: 100;
+  margin: 5px;
+}
+
+.headerMenu {
+  margin-top: 7em;
+  background: #252625;
+  opacity: 0.65;
+  padding: 5px 0 5px 0;
+  filter: alpha(opacity=65); /* For IE8 and earlier */
+}
+
+.headerMenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.headerMenu li {display: inline; font-size: 29px;}
+
+.headerMenu a {color: #eaeaea; text-decoration: none; padding: 5px 60px;}
+
+.headerMenu a:hover {
+  background-color: #eaeaea;
+  color: #252625;
+  opacity: 0.65;
+  filter: alpha(opacity=65); /* For IE8 and earlier */
+}
+
+.wrapper {
+  font-family: 'Quicksand', sans-serif;
+  color: #eaeaea;
+  font-size: 20px;
+  text-align: center;
+}
+
+.content {margin-top: 300px; max-width: 50%; margin-left: 25%;}
+
+.formButton, input[type="submit"] {
+  font-family: "Comfortaa",cursive;
+  color: #252625;
+  font-size: 19px;
+  border-radius: 8px;
+}
+
+#email {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left:50%;
+  padding-top: 25%;
+  width: 100%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  background-color: rgb(0, 0, 0, 0.9);
+  min-height: 100%;
+}
+
+.closeButton{
+  border: solid #eaeaea 2px;
+  border-radius: 50%;
+  max-width: 32.5px;
+  margin-left: 75%;
+}
+
+.closeButton:hover {
+  color: #af0000;
+  border-color: #af0000;
+}
+input, textarea {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin-top: 0.7em;
+  display: block;
+  color: #252625;
+  width: 100%;
+  padding: 5px;
+  max-width: 50%;
+  margin-left: 25%;
+  border-radius: 8px;
+}
+textarea {height: 80px; resize: none;}
