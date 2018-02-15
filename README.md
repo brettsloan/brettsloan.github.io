@@ -10,5 +10,5 @@ LOGIN Page of RIFCO app is useless as of now. Any username is accepted. No info 
 <br><br>
 <h1>Demoraes Music</h1><br>
 <h3>Music Lessons by Darren Demoraes</h3><br>
-A small website I created for my friend's music lesson business.<br>
+A small website I created for my friends' music lesson business.<br>
 Includes information about the client as well as way to reach them via email.
