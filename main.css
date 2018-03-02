@@ -1,0 +1,43 @@
+* {
+  border: solid 1px rgb(0,0,0,0.0);
+}
+
+html, body {
+  background: #444;
+  height: 100%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 3px;
+  color: #FFF;
+}
+
+.jumbotron {
+  text-align: center;
+  background: #383838;
+}
+
+.btn {
+  width: 75%;
+  margin-left: 12.5%;
+}
+
+p {
+  margin: auto;
+  color: white;
+}
+footer {
+  bottom: 0;
+  left: 0;
+  min-width: 100%;
+  position: fixed;
+}
+/*ICONS*/
+.fa {
+  padding: 6px;
+  font-size: 37px;
+  width: 45px;
+  border-radius: 50%;
+}
+.fa:hover {opacity: 0.8; text-decoration: none; color: white;}
+.fa-twitter {background: #55ACEE; color: white;}
+.fa-facebook {background: #3B5998; color: white;}
+.fa-github {background: grey; color: white;}
