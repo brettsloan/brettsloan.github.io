@@ -1,42 +1,72 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="GitHubStyleSheet.css">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>     </title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <div class="holder">
-      <div class="header">
-        <h1>GitHub Web Apps</h1>
-        <h2>by Brett Sloan</h2>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>GitHub Web Portfolio</h1>
+        <h3>by: Brett Sloan</h3>
       </div>
-      <div class="projectButtons">
-        <a href="Login.html">
-          <button id="RIFCObutton">RIFCO Info Hub</button>
-        </a>
-        <a href="http://www.demoraesmusic.x10host.com">
-          <button id="RIFCObutton">Demoraes Music</button>
-        </a>
+      <div class="row">
+        <div class="col-sm-6">
+          <a class="btn btn-primary" href="https://brettsloan.github.io/Login.html" role="button">
+            RIFCO Info Hub
+          </a>
+        </div>
+        <div class="col-sm-6">
+          <a class="btn btn-primary" href="http://www.demoraesmusic.x10host.com/" role="button">
+            Demoraes Music
+          </a>
+        </div>
       </div>
-      <p>More coming soon...</p>
-      <div class="footer">
-        <p id="footerEmail">brett.sloan@hotmail.com</p>
-        <div id="leftSide">
-          <p>&copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-          </p>
-        </div>
-        <div id="rightSide">
-          <a href="https://www.facebook.com/brett.sloan.908" target="_blank" class="fa fa-facebook"></a>
-          <a href="https://twitter.com/brettsloan" target="_blank" class="fa fa-twitter"></a>
-          <a href="https://github.com/brettsloan" target="_blank" class="fa fa-github"></a>
-        </div>
+      <div class="row">
+        <p>
+          More coming soon...
+        </p>
       </div>
     </div>
+
+
+    <footer class="card-footer container">
+      <div class="jumbotron">
+        <div class="col-sm-6 float-left">
+          <p>brett.sloan@hotmail.com</p>
+        </div>
+        <div class="col-sm-6 float-right">
+          <p>&copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <a href="https://www.facebook.com/brett.sloan.908" target="_blank" class="fa fa-facebook"></a>
+          </div>
+          <div class="col-4">
+            <a href="https://twitter.com/brettsloan" target="_blank" class="fa fa-twitter"></a>
+          </div>
+          <div class="col-4">
+            <a href="https://github.com/brettsloan" target="_blank" class="fa fa-github"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
