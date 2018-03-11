@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Quicksand|Heebo:300');
+html {
+  height: 110%;
+  overflow-x: hidden;
+}
+body {
+  background: url('../background.jpeg') no-repeat center fixed;
+  background-size: cover;
+  color: #eaeaea;
+  font-family: Quicksand, sans-serif;
+}
+
+/*---------------NAV BAR EDITS----------------*/
+.navbar {
+  padding: 0px;
+  z-index: 1;
+}
+.navbar-light .navbar-nav .red{
+  font-family: 'Heebo', sans-serif;
+  color: #ff3a3a;
+}
+.navbar-light .navbar-nav .big{
+  font-family: 'Heebo', sans-serif;
+}
+.navbar-light .navbar-nav .red:hover {
+  color: #ff3a3a;
+  font-size: 1.3em;
+  background-color: inherit;
+}
+.navbar-light .navbar-nav .big:hover {
+  font-size: 1.3em;
+  background-color: inherit;
+}
+.navbar-brand {
+  font-family: Lobster, cursive;
+  font-size: 2em;
+}
+
+/*---------------BODY CONTENT CENTERING/SIZING/SHADOW/BUTTON----------------*/
+.padding {
+  padding: 50px 0;
+}
+.padding p {
+  font-size: 1.2em;
+}
+.fontShadow {
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+  0px 8px 13px rgba(0,0,0,0.1),
+  0px 18px 23px rgba(0,0,0,0.1);
+  background-color: rgba(0,0,0,0.2);
+  padding: 10px;
+  border-radius: 5px;
+}
+a:hover {
+  background: #eaeaeab3;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #252625cc;
+}
+
+/*---------------FOOTER/HR/GOOGLEMAP EDIT----------------*/
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #eaeaea;
+  margin: 1em 1em;
+  padding: 0;
+}
+#map {
+  margin: auto;
+  height: 150px;
+  width: 90%;
+}
+.footer {
+  font-family: 'Heebo', sans-serif;
+  /* margin: 0; */
+  padding: 10px 0;
+  background: #e21d1d;
+  border-radius: 5px;
+}
+
+/*---------------EMAIL POP UP EDIT----------------*/
+#email {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 25% 5%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  background-color: #000;
+  opacity: .9;
+  min-height: 100%;
+  width: 100%;
+}
+.closeButton:hover {
+    color: #af0000;
+    cursor: pointer;
+}
