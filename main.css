@@ -1,6 +1,4 @@
-* {
-  border: solid 1px rgba(0,0,0,0.0);
-}
+@import url('https://fonts.googleapis.com/css?family=Lobster|Open+Sans+Condensed:300');
 
 html, body {
   background: #444;
@@ -16,28 +14,36 @@ html, body {
 }
 
 .btn {
-  width: 75%;
-  margin-left: 12.5%;
+  width: 100%;
 }
 
-p {
-  margin: auto;
-  color: white;
+.btn-light {
+  font-family: Lobster, cursive;
+  font-size: 1.2em;
+  letter-spacing: normal;
 }
-footer {
-  bottom: 0;
-  left: 0;
-  min-width: 100%;
-  position: fixed;
+
+.rifco {
+  background: rgba(13,121,171,1);
+  background: linear-gradient(to bottom, rgba(9,176,232,1) 0%,
+  rgba(13,121,171,1) 100%);;
+  color: #FFFFFF! important;
+  font-family:"Segoe UI",Arial,sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+  letter-spacing: normal;
 }
+
+.col-12 {
+  padding-bottom: 15px;
+}
+
+footer span {
+  color: #000;
+}
+
 /*ICONS*/
-.fa {
-  padding: 6px;
-  font-size: 37px;
-  width: 45px;
-  border-radius: 50%;
-}
-.fa:hover {opacity: 0.8; text-decoration: none; color: white;}
-.fa-twitter {background: #55ACEE; color: white;}
-.fa-facebook {background: #3B5998; color: white;}
-.fa-github {background: grey; color: white;}
+.fab:hover {opacity: 0.8; text-decoration: none; color: white;}
+.fa-twitter {color: #55ACEE;}
+.fa-fonticons-fi {color: #03b525;}
+.fa-github {color: grey;}
