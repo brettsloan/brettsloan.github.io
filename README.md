@@ -1,6 +1,6 @@
 # brettsloan.github.io
 My personal projects to improve my skills as a developer<br>
-Rifco App is sitting at V1.4 as of 08/29/2017<br>
+Rifco App is sitting at V2 as of 03/25/2018<br>
 DemoraesMusic is sitting at V1.6 as of 03/11/2018<br><br>
 <h1>RIFCO Info Hub</h1><br>
 A place for RIFCO agents to view important information as well as day to day templates or other useful things.<br>
