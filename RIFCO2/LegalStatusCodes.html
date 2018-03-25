@@ -1,0 +1,482 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RIFCO Templates</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+    <!-- Sidebar Holder -->
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+            <i class="glyphicon glyphicon-menu-hamburger"></i> MENU
+          </button>
+        </div>
+        <ul class="list-unstyled components">
+          <li>
+            <a href="ContactInformation.html">
+              <i class="glyphicon glyphicon-home"></i>
+              Home
+            </a>
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+              <i class="glyphicon glyphicon-folder-open"></i>
+              DoneDone Templates
+            </a>
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+              <li><a href="DoneDoneTemplates.html#Ext">Extension</a></li>
+              <li><a href="DoneDoneTemplates.html#SPW">Single Payment Withdrawal</a></li>
+              <li><a href="DoneDoneTemplates.html#CPA">Change Payment Amount</a></li>
+              <li><a href="DoneDoneTemplates.html#SPM">Single Payment Move</a></li>
+              <li><a href="DoneDoneTemplates.html#SPC">Single Payment Cancel</a></li>
+              <li><a href="DoneDoneTemplates.html#PDDC">Due Date Change</a></li>
+              <li><a href="DoneDoneTemplates.html#FV">Field Visit</a></li>
+              <li><a href="DoneDoneTemplates.html#CEFT">Cancel EFT</a></li>
+              <li><a href="DoneDoneTemplates.html#BT">Budget Template</a></li>
+              <li><a href="DoneDoneTemplates.html#TLM">Temp Loan Mod</a></li>
+              <li><a href="DoneDoneTemplates.html#SBR">Small Balance Re-Am</a></li>
+            </ul>
+            <a href="QualityScoreCard.html">
+              <i class="glyphicon glyphicon-star"></i>
+              Quality Score Card
+            </a>
+            <a href="Scripts.html">
+              <i class="glyphicon glyphicon-bullhorn"></i>
+              Scripts
+            </a>
+            <a href="Tips.html">
+              <i class="glyphicon glyphicon-pushpin"></i>
+              Tips And Guidelines
+            </a>
+            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
+              <i class="glyphicon glyphicon-envelope"></i>
+              Email Templates
+            </a>
+            <ul class="collapse list-unstyled" id="pageSubmenu">
+              <li><a href="emailTemplates.html#ROCBM">Request for Contact</a></li>
+              <li><a href="emailTemplates.html#EVTBM">Verification Template</a></li>
+              <li><a href="emailTemplates.html#BTBM">Budget Template</a></li>
+              <li><a href="emailTemplates.html#CIBM">Contact Information</a></li>
+              <li><a href="emailTemplates.html#OBIBM">Online Banking Instructions</a></li>
+              <li><a href="emailTemplates.html#WUIBM">Western Union Instructions</a></li>
+              <li><a href="emailTemplates.html#PRBM">Payment Reminder Template</a></li>
+              <li><a href="emailTemplates.html#BABM">Broken Arrangement Template</a></li>
+            </ul>
+            <a href="#2pageSubmenu" data-toggle="collapse" aria-expanded="false">
+              <i class="glyphicon glyphicon-envelope"></i>
+              Back End Emails
+            </a>
+            <ul class="collapse list-unstyled" id="2pageSubmenu">
+              <li><a href="BackEndTemplates.html#EOBM">1-29 DPD #1</a></li>
+              <li><a href="BackEndTemplates.html#ETBM">1-29 DPD #2</a></li>
+              <li><a href="BackEndTemplates.html#ETRBM">30-45 DPD #3</a></li>
+              <li><a href="BackEndTemplates.html#EFBM">30-45 DPD #4</a></li>
+              <li><a href="BackEndTemplates.html#EFVBM">46-55 DPD #5</a></li>
+              <li><a href="BackEndTemplates.html#ESBM">46-55 DPD #6</a></li>
+              <li><a href="BackEndTemplates.html#ESVBM">56-65 DPD #7</a></li>
+              <li><a href="BackEndTemplates.html#EEBM">66-75 DPD #8</a></li>
+              <li><a href="BackEndTemplates.html#ENBM">76+ DPD #9</a></li>
+            </ul>
+            <a class="active" href="LegalStatusCodes.html">
+              <i class="glyphicon glyphicon-briefcase"></i>
+              Legal Status Codes
+            </a>
+            <a href="PayoutRequestForm.html">
+              <i class="glyphicon glyphicon-paperclip"></i>
+              Payout Request Form
+            </a>
+            <a href="TextOptIn.html">
+              <i class="glyphicon glyphicon-phone"></i>
+              Texting Opt In
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Page Content Holder -->
+      <div id="content">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="row">
+              <img alt="Rifco"
+              src="http://www.rifco.net/wp-content/uploads/2014/04/header-logo-rifco.png">
+            </div>
+            <div class="row col-xs-12">
+              <hr>
+              <h1>
+                Legal Status Codes:
+              </h1>
+            </div>
+          </div>
+        </nav>
+      <table>
+        <tr>
+          <th>Value</th>
+          <th>Description</th>
+          <th>Call Y/N</th>
+          <th>Alt Info</th>
+        </tr>
+        <tr>
+          <td>BK - Bankrupt</td>
+          <td>Client has gone bankrupt</td>
+          <td>NO</td>
+          <td>** Status code usually in termed loans only</td>
+        </tr>
+        <tr>
+          <td>BK – CP Annulled</td>
+          <td>Client has filed a Consumer proposal but did not follow
+              through with payments so is now anulled and able to
+              resume collection
+          </td>
+          <td>YES</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>BK – CPN</td>
+          <td>Client has filed a Consumer proposal and Rifco
+            voted no to the claim
+          </td>
+          <td>YES</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>BK - CPY</td>
+          <td>Client has filed a Consumer proposal and Rifco
+              voted yes to the claim
+          </td>
+          <td>NO</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>BK – Discharged</td>
+          <td>Client has abided by all rules and has been discharged.
+              No longer in bankruptcy status
+          </td>
+          <td>YES</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>BK – Dispute</td>
+          <td>Client filed bankruptcy- Trustee is disputing banko claim</td>
+          <td>YES</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>BK – OPD</td>
+          <td>Client has filed for orderly payment of debt.
+              Rifco never participates in this
+          </td>
+          <td>YES</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>BK – POC</td>
+          <td>Client has filed bankruptcy.
+              Trustee has denied our proof of claim
+          </td>
+          <td>NO</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>BK – Reaff</td>
+          <td>Client has filed bankruptcy. Reaffirmation of debt letter
+              has been sent to client
+          </td>
+          <td>YES</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>BK - Reaff - R</td>
+          <td>Rifco has received a completed copy of the reaffirmation
+              of debt letter in office
+          </td>
+          <td>YES</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>BK - Removed</td>
+          <td>Client has been removed from bankruptcy status</td>
+          <td>YES</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>BK - Repo</td>
+          <td>Client has filed bankruptcy and Rifco is in the
+              repossession status. See Repo Status code for
+              if you should call
+          </td>
+          <td>SEE REPO CODES</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>BK - ROI - K</td>
+          <td>Rifco has received a release of interest from the trustee.
+              Client has intentions on keeping unit
+          </td>
+          <td>YES</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>BK - ROI - S</td>
+          <td>Rifco has received a release of interest from the trustee.
+              Client has intentions on surrendering unit
+          </td>
+          <td>NO</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>BK - Stay</td>
+          <td>Rifco has received bankruptcy documents- In a stay of proceedings</td>
+          <td>NO</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>RP - Assigned</td>
+          <td>Assigned for repossession</td>
+          <td>NO</td>
+          <td>** At this time please report these to Supervisor</td>
+        </tr>
+        <tr>
+          <td>RP - Auction</td>
+          <td>Vehicle has been seized and is at auction</td>
+          <td>NO</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>RP - Bailiee</td>
+          <td>Vehicle has been tagged under a bailiee's undertaking.
+              Technically seized under the provincial law
+          </td>
+          <td>NO</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>RP - Dealer</td>
+          <td>Vehicle has been seized and is at a dealership</td>
+          <td>NO</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>RP - Disabled</td>
+          <td>GPS Tracker on vehicle has been disabled</td>
+          <td>NO</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>RP - Hold</td>
+          <td>Vehicle is assigned for repo but agent has put on hold.
+              Files on hold require PTP for full arrears in 30 days.
+              No exceptions without supervisor approval
+          </td>
+          <td>YES</td>
+          <td>** Agents must stick to prev PTP. If no results
+              report to supervisor
+          </td>
+        </tr>
+        <tr>
+          <td>RP - Impound</td>
+          <td>Vehicle has been seized and/or is at an impound
+              waiting on transport
+          </td>
+          <td>NO</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>RP - Police</td>
+          <td>Vehicle has been picked up by police and is being
+              held until certain date
+          </td>
+          <td>NO</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>RP - Reedem</td>
+          <td>Vehicle had been repossessed in the past and client
+              completed redemption process
+          </td>
+          <td>YES</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>RP - Sold</td>
+          <td>Vehicle has been seized and sold at auction</td>
+          <td>NO</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>RP - Store-Repair</td>
+          <td>Vehicle has been seized and requires repairs or is in storage</td>
+          <td>NO</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>RP - Warning</td>
+          <td>GPS Tracker on vehicle has been set with a warning</td>
+          <td>NO</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>RP - WOF</td>
+          <td>Vehicle has been sold at auction and Rifco is waiting on funds</td>
+          <td>NO</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>OTH - 2/3rds</td>
+          <td>Loan balance is 2/3rds paid. Unable to seize without
+              voluntary surrender
+          </td>
+          <td>YES</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>OTH - 3/4ers</td>
+          <td>Loan balance is 3/4 paid. Unable to seize without
+              voluntary surrender
+          </td>
+          <td>YES</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>OTH - Burrard-C</td>
+          <td>File has been sent for legal action to lawyer- contingent</td>
+          <td>NO</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>OTH - Burrard-L</td>
+          <td>File has been sent to legal letter</td>
+          <td>YES</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>OTH - Burrard-Letter</td>
+          <td>File has been sent to legal for contact/Demand letter</td>
+          <td>YES</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>OTH - Farm</td>
+          <td>Farm Debt plated </td>
+          <td>YES</td>
+          <td>** Agents must IMM report any Farm plated files to supervisor</td>
+        </tr>
+        <tr>
+          <td>OTH - Field Call</td>
+          <td>File has been sent to the bailiff for a field call</td>
+          <td>YES</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>OTH - Field Visit</td>
+          <td>File has been sent to the bailiff for a field visit/door knock</td>
+          <td>YES</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>OTH - Fraud</td>
+          <td>File is fraud</td>
+          <td>YES</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>OTH - FRS</td>
+          <td>File has been outsourced to 3rd party collection agency - FRS</td>
+          <td>NO</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>OTH - GPS</td>
+          <td>Vehicle has a GPS tracker unit</td>
+          <td>NO</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>OTH - Insure Claim</td>
+          <td>Vehicle has been in accident and open insurance claim pending</td>
+          <td>YES</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>OTH - No Coll</td>
+          <td>No collateral - Could be ins WO with balance
+              remaining or vehicle not running etc
+          </td>
+          <td>YES</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>OTH – No Insure</td>
+          <td>No valid insurance policy on file</td>
+          <td>YES</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>OTH - Parked</td>
+          <td>Vehicle only has parked insurance</td>
+          <td>YES</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>OTH - Quebec</td>
+          <td>Vehicle is located in Quebec</td>
+          <td>YES</td>
+          <td>** Agents must immediately advise if client is
+              thinking or already moved to PQ due to provincial legislation
+          </td>
+        </tr>
+        <tr>
+          <td>OTH - Skip</td>
+          <td>File is a skip - no contact with client</td>
+          <td>YES</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>OTH - US</td>
+          <td>Vehicle is located in the US</td>
+          <td>NO</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>OTH - Related Loan</td>
+          <td>Personal Rifco loan</td>
+          <td>NO</td>
+          <td>** Report to supervisor</td>
+        </tr>
+        <tr>
+          <td>OTH - Payment Plan</td>
+          <td></td>
+          <td>NO</td>
+          <td>** Xfer to 855-896-0183</td>
+        </tr>
+        <tr>
+          <td>OTH - VNS</td>
+          <td></td>
+          <td>NO</td>
+          <td>** Xfer to 855-896-0183</td>
+        </tr>
+      </table>
+      </div>
+    </div>
+    <script src="jquery-1.12.0.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#sidebar").mCustomScrollbar({
+          theme: "minimal"
+        });
+
+        $('#sidebarCollapse').on('click', function () {
+          $('#sidebar, #content').toggleClass('active');
+          $('.collapse.in').toggleClass('in');
+          $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+      });
+    </script>
+  </body>
+ </html>
