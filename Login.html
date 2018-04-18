@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>RIFCO Templates</title>
-    <link rel="stylesheet" href="RIFCO2/main.css">
+    <link rel="stylesheet" href="RIFCO3/CSS/Main.css">
   </head>
   <body>
     <div class="modal">
@@ -14,12 +14,42 @@
         <label id="usr">Username<br></label>
         <input id="usrnme" type="text" placeholder="Enter Username" required>
         <button class="sub" type="submit">Login</button>
+        <p>Username is now your RIFCO email</p>
       </form>
     </div>
+    <script src="RIFCO3/jquery-1.12.0.min.js"></script>
     <script type="text/javascript">
-    function login() {
-      window.open("RIFCO2/ContactInformation.html",'_self',false);
+    var users = [
+      "Jimmy.w@rifco.net",
+      "Brett.s@rifco.net",
+      "Stephen.s@rifco.net",
+      "Ryan.h@rifco.net",
+      "Kathy.h@rifco.net",
+      "Pat.t@rifco.net",
+      "Cassandra.p@rifco.net",
+      "Vijitha.v@rifco.net",
+      "Maria.i@rifco.net",
+      "Susan.f@rifco.net",
+      "John.r@rifco.net",
+      "Janice.t@rifco.net",
+      "Dan.b@rifco.net",
+      "Benjamin.m@rifco.net",
+      "Nolan.l@rifco.net",
+      "Michael.k@rifco.net"
+    ];
+    function upperCaseUserName(string) {
+      return string.charAt(0).toUpperCase() + string.slice(1);
     }
+    function login() {
+      var userName = document.getElementById("usrnme").value;
+      userName = upperCaseUserName(userName);
+      users.forEach(function(x) {
+        if(userName === x) {
+          window.open("RIFCO3/RifcoHomePage.html",'_self',false);
+        }
+      });
+    }
+
     </script>
   </body>
 </html>
