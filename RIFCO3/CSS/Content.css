@@ -18,6 +18,10 @@ body {font-family: 'Poppins', sans-serif; background: #fafafa;}
     padding-right: calc(50% - 75px);
 }
 
+.navbar {
+  border: 0px;
+}
+
 h1 {color: #00577d; font-size: 2.5em;}
 
 h2,h3 {color: #00577d; font-size: 1.85em;}
