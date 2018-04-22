@@ -1,7 +1,7 @@
 # brettsloan.github.io
 My personal projects to improve my skills as a developer<br>
 Rifco App is sitting at RIFCO3 as of 04/17/2018<br>
-DemoraesMusic is sitting at V1.6 as of 03/11/2018<br><br>
+DemoraesMusic is sitting at V1.7 as of 04/22/2018<br><br>
 <h1>RIFCO Info Hub</h1>
 A place for RIFCO agents to view important information as well as day to day templates or other useful things.<br>
 Master has known copy and paste issues with the RIFCO app. Use RIFCOApp-V1.1 or higher as they were fixed in that update.<br>
