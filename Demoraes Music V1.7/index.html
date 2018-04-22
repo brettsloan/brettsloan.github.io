@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Guitar and drum lessons just outside of Sunderland Ontario. Lessons for anyone looking to improve their skill.">
+    <meta name="keywords" content="Guitar, Drums, Music Lessons, Lessons, Beginner, intermediate, Sunderland">
+    <meta name="author" content="Darren Demoraes">
+    <title>Demoraes Music</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="CSS/main.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand mb-0" href="index.html">Demoraes Music</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+          <div class="navbar-nav mr-auto">
+            <a class="nav-link nav-item active big lessonButton LBA" href="#">Lesson Info</a>
+            <a class="nav-link nav-item big aboutButton ABA" href="#">About Me</a>
+            <a class="nav-link nav-item red formButton" href="#">Book Now!</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="backgroundcolor">
+      <div class="container padding">
+        <div class="row">
+          <div class="col-sm-12 col-md-8 offset-md-2 text-center fontShadow">
+            <div class="changeout">
+              <h2>Lessons</h2>
+              <p>
+                Are you just starting out in music? Looking to improve your skills
+                in specific areas? I cover everything from the basics to more advanced
+                lessons.
+              </p>
+              <p>
+                I teach guitar and drums for both beginners and more
+                intermediate players looking to better their skills.
+              </p>
+              <p>
+                Lessons are $30 each, once a week for half an hour (excluding holidays) and
+                are paid as one monthly fee on the first lesson on the month.
+              </p>
+            </div>
+            <div class="changein">
+              <h2>About Me</h2>
+              <p>
+                My name is Darren Demoraes and music has always been a huge part of my life. My grandfather was a great jazz drummer and he was the one who inspired me to start playing drums at an early age.
+              </p>
+              <p>
+                I got my first drum set when I was 8 years old. From there I studied drumming under John Hughes at Georgina Music. I took drum lessons for 6 years and still continue to play to this day.
+              </p>
+              <p>
+                I received my first guitar at 16 and took only a handful of lessons. I was old enough then to teach myself everything I know now.
+              </p>
+              <p>
+                I've played multiple instruments in many bands covering all sorts of genres. I still play guitar and drums every day and continue to learn new things while bettering myself anyway that I can.
+              </p>
+            </div>
+            <div>
+              <i class="fas fa-arrow-circle-left fa-2x lessonButton"></i>
+            </div>
+            <div>
+              <i class="fas fa-arrow-circle-right fa-2x aboutButton"></i>
+            </div>
+            <div class="padding">
+              <input class="btn btn-light btn-lg btn-block formButton" type="button" name="book" value="Book Now!">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="footer row">
+          <div class="col-12 col-md-4 text-center">
+            <i class="far fa-calendar-alt fa-2x"></i>
+            <h3>Availablity</h3>
+            <hr>
+            <p class="text-center">Monday: 5:30PM - 8:30PM<br>
+            Tuesday: 5:30PM - 8:30PM<br>
+            Wednesday: 5:30PM - 8:30PM<br>
+            Thursday: 5:30PM - 8:30PM<br>
+            Friday: 5:30PM - 8:30PM</p>
+          </div>
+          <div class="col 12 col-md-4 text-center">
+            <i class="far fa-address-card fa-2x"></i>
+            <h3>Contact Info</h3>
+            <hr>
+            <p>Text or call: 905-906-7354</p>
+            <p>Email: darren.demoraes@gmail.com</p>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <i class="fas fa-map-marker-alt fa-2x"></i>
+            <h3>Location</h3>
+            <hr>
+            <div id="map">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="email" class="container fontShadow">
+        <div class="row">
+          <div class="col-8 offset-2 text-center">
+            <h2>Booking Lessons</h2>
+          </div>
+          <div class="col-2 closeButton text-center" onclick="emailForm();">
+            &#10006;
+          </div>
+        </div>
+        <form method="post" name="myemailform" action="form-to-email.php" onsubmit="thankYou()">
+          <div class="form-row">
+            <div class="form-group col-6">
+              <input class="form-control" type="text" placeholder="NAME" name="name" required>
+            </div>
+            <div class="form-group col-6">
+              <input class="form-control" type="email" placeholder="EMAIL" name="email">
+            </div>
+            <div class="form-group col-12">
+              <textarea class="form-control" placeholder="MESSAGE (Please include the type of lesson and the best way to reach you. Thank you)" name="message" required></textarea>
+            </div>
+            <div class="form-group col-12">
+              <input class="btn btn-light btn-lg btn-block" type="submit" name="submit" value="Send Form">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="scripts/demoraesmusic.js"></script>
+  </body>
+</html>
