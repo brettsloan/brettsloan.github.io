@@ -3,8 +3,8 @@
 
 /*CONTENT*/
 @media only screen and (max-width: 767px) {
-  body {
-    background: url('coffee-computer-cup-162441.jpg')no-repeat center center fixed;
+  html {
+    background: url('coffee-computer-cup-162441-mobile.jpg')no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -27,8 +27,8 @@ body {
   padding-top: 20px;
 }
 .main-wrapper {
-    min-height: 100%;
-    padding: 0 0 100px;
+  min-height: 100%;
+  padding: 0 0 100px;
 }
 .off {display: none;}
 p {font-size: 1.5em;}
