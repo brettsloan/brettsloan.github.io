@@ -2,16 +2,24 @@
 
 /*CONTENT*/
 html, body {
-  background: url('coffee-computer-cup-162441.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100%;
   font-family: 'Open Sans Condensed', sans-serif;
   letter-spacing: 1.5px;
 }
-.off{display: none;}
-
+body {
+  background: url('coffee-computer-cup-162441.jpg')no-repeat center fixed;
+  background-size: cover;
+  transition: padding-top 0.3s ease;
+  padding-top: 20px;
+}
+.main-wrapper {
+    box-sizing: border-box;
+    min-height: 100%;
+    padding: 0 0 100px;
+    position: relative;
+}
+.off {display: none;}
+p {font-size: 1.3em;}
 /*BUTTONS*/
 .demoraes-music {
   font-family: Lobster, cursive;
@@ -30,7 +38,14 @@ html, body {
 }
 
 /*FOOTER*/
-footer {background-color: rgba(255,255,255,0.4);}
+footer {
+  background-color: rgba(255,255,255,0.4);
+  bottom: 0;
+  height: 50px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
 footer li a {color: #303030! important;}
 footer li a:hover {background-color: rgba(255, 255, 255, 0.8);}
 
