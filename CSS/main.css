@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster|Open+Sans+Condensed:300');
 
+
 /*CONTENT*/
+@media only screen and (max-width: 767px) {
+  body {
+    background: url('coffee-computer-cup-162441.jpg')no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
 html {
   height: 100%;
   background: url('coffee-computer-cup-162441.jpg')no-repeat center center fixed;
