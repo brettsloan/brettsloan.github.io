@@ -1,25 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster|Open+Sans+Condensed:300');
 
 /*CONTENT*/
-html, body {
-  height: 100%;
-  font-family: 'Open Sans Condensed', sans-serif;
-  letter-spacing: 1.5px;
-}
+html {height: 100%;}
 body {
   background: url('coffee-computer-cup-162441.jpg')no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   transition: padding-top 0.3s ease;
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 1.5px;
   padding-top: 20px;
 }
 .main-wrapper {
-    box-sizing: border-box;
-    min-height: 100%;
-    padding: 0 0 100px;
-    position: relative;
+  box-sizing: border-box;
+  min-height: 100%;
+  padding: 0 0 100px;
+  position: relative;
 }
 .off {display: none;}
-p {font-size: 1.3em;}
+p {font-size: 1.5em;}
+
 /*BUTTONS*/
 .demoraes-music {
   font-family: Lobster, cursive;
