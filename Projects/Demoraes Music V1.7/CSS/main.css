@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Quicksand|Heebo:300');
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+body {
+  background: url('../background.jpeg') no-repeat center fixed;
+  background-size: cover;
+  color: #eaeaea;
+  font-family: Quicksand, sans-serif;
+}
+.backgroundcolor {
+  position: absolute;
+  background-color: rgba(0,0,0,0.3);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*---------------NAV BAR EDITS----------------*/
+.navbar {
+  padding: 0px;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+}
+.navbar-light .navbar-nav .red{
+  font-family: 'Heebo', sans-serif;
+  color: #ff3a3a;
+}
+.navbar-light .navbar-nav .big{
+  font-family: 'Heebo', sans-serif;
+}
+.navbar-light .navbar-nav .red:hover {
+  color: #ff3a3a;
+  font-size: 1.1em;
+  background-color: inherit;
+}
+.navbar-light .navbar-nav .big:hover {
+  font-size: 1.1em;
+  background-color: inherit;
+}
+.navbar-brand {
+  font-family: Lobster, cursive;
+  font-size: 2em;
+}
+.active {
+  font-weight: bold;
+}
+
+/*---------------BODY CONTENT CENTERING/SIZING/SHADOW/BUTTON----------------*/
+
+.padding {
+  padding-top: 75px;
+}
+.padding p {
+  font-size: 1.2em;
+}
+.fontShadow {
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+  0px 8px 13px rgba(0,0,0,0.1),
+  0px 18px 23px rgba(0,0,0,0.1);
+  padding: 5px;
+}
+
+
+/*-------------LEFT AND RIGHT ARROWS------------*/
+.fa-arrow-circle-left {
+  float: left;
+}
+.fa-arrow-circle-left:hover {
+  color: #252625cc;
+  cursor: pointer;
+}
+.fa-arrow-circle-right {
+  float: right;
+}
+.fa-arrow-circle-right:hover {
+  color: #252625cc;
+  cursor: pointer;
+}
+/*---------------FOOTER/HR/GOOGLEMAP EDIT----------------*/
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #eaeaea;
+  margin: 1em 1em;
+  padding: 0;
+}
+#map {
+  margin: auto;
+  height: 120px;
+  width: 90%;
+}
+.footer {
+  font-family: 'Heebo', sans-serif;
+  position: absolute;
+  margin-top: 10%;
+  z-index: 1;
+  width: 100%;
+  height: 250px;
+  padding-top: 10px;
+  background-color: #e21d1d;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .footer {height: 700px;}
+}
+
+/*---------------EMAIL POP UP EDIT----------------*/
+#email {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 20% 20%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  font-family: 'Heebo', sans-serif;
+  background-color: rgba(34, 34, 34, 0.9);
+  min-height: 100%;
+  min-width: 100%;
+}
+@media only screen and (max-width: 991px) {
+    #email {padding: 25% 5%;}
+}
+.closeButton:hover {
+    color: #af0000;
+    cursor: pointer;
+}
+.changein {
+  display: none;
+}

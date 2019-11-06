@@ -8,6 +8,7 @@
     background-size: cover;
   }
 }
+
 html {
   height: 100%;
   background: url('coffee-computer-cup-162441.jpg')no-repeat center center fixed;
@@ -17,6 +18,7 @@ html {
   background-size: cover;
 }
 body {
+  height: 100%;
   background-color: rgba(255,255,255,0.0);
   transition: padding-top 0.3s ease;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -48,7 +50,7 @@ p {font-size: 1.5em;}
 }
 
 /*FOOTER*/
-footer {
+/* footer {
   background-color: rgba(255,255,255,0.4);
   bottom: 0;
   height: 50px;
@@ -57,9 +59,9 @@ footer {
   width: 100%;
 }
 footer li a {color: #303030! important;}
-footer li a:hover {background-color: rgba(255, 255, 255, 0.8);}
+footer li a:hover {background-color: rgba(255, 255, 255, 0.8);} */
 
 /*ICONS*/
-.fa-twitter {color: #55ACEE;}
+/* .fa-twitter {color: #55ACEE;}
 .fa-fonticons-fi {color: #03b525;}
-.fa-github {color: grey;}
+.fa-github {color: grey;} */
