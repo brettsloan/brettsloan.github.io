@@ -1,28 +1,12 @@
 $(document).ready(function () {
-	
+
 	// Top Links
 	$(".a-link").on('click', function() {
-		var x = $(this).attr("href");
+		var x = $(this).attr("alt");
 		x = x.slice( 1 );
-		$(".switch").fadeOut("fast");
-		$("div#"+x).fadeIn("slow");
+		$(".switch").fadeOut(500);
+		$("div#"+x).fadeIn(1000);
 	});
-
-	// Next Button
-	/*$(".next").on('click', function() {
-		if (!$("#About").is(":hidden")) {
-			$(".switch").slideUp("slow");
-			$("#Projects").slideDown("slow");
-		} else if (!$("#Projects").is(":hidden")) {
-			$(".switch").slideUp("slow");
-			$("#Contact").slideDown("slow");
-		} else if (!$("#Contact").is(":hidden")) {
-			$(".switch").slideUp("slow");
-			$("#About").slideDown("slow");
-		} else {
-			$("#About").slideDown("slow");
-		}
-	}); */
 
 	//NavBar Corrections
 	$(".mt-1").on('click', function() {
@@ -34,7 +18,7 @@ $(document).ready(function () {
 			$('body').css('padding-top', '20px');
 		}
 	});
-	
+
 	$(document).on('click', function (event) {
 		var clickover = $(event.target);
 		var _opened = $(".navbar-collapse").hasClass("open");

@@ -1,0 +1,78 @@
+
+html {
+  height: 100%;
+  overflow-y: auto;
+  background: url('../Pics/AnnaMariaDr.jpg') center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+}
+body {
+  height: 100%;
+  background-color: rgba(32,32,32,0);
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 50px;
+  height: calc(100vh - 50px);
+  overflow: auto;
+}
+
+/* NAV BAR */
+#navBar {
+  margin: -6px;
+}
+.bg-dark {background-color: rgba(32,32,32,0.8) !important;}
+a {z-index: 100; color: #fff;}
+a:hover{transition: opacity 0.4s ease; opacity: 0.5;}
+
+img {
+  width: 50%;
+}
+
+/* PAGES & JS SWITCHING */
+.hidden {display: none;}
+.notHidden .hidden {display: block;}
+.padding-top{padding-top: 75px;}
+.background-color{
+  background-color: rgba(32,32,32,0.8);
+  z-index: -100;
+  min-height: 100%;
+}
+hr {
+  height: 30px;
+  border-style: solid;
+  border-color: #8c8b8b;
+  border-width: 2px 0 0 0;
+}
+
+/* YOUTUBE/MUSIC PLAYERS */
+iframe {border: 0px; width: 100%; height: 630px; padding-bottom: 20px;}
+.players{width: 100% !important; height: 500px !important;}
+
+/* SOCIAL MEDIA LOGOS */
+.fa-facebook {color: #3b5998;}
+.fa-twitter {color: #55ACEE;}
+.fa-instagram {color: #e95950;}
+.fa-bandcamp {color: #629aa9}
+.fa-google-play {color: #3BCCFF}
+.fa-spotify {color: #1db954;}
+.fa-youtube {color: #e52d27;}
+
+
+@media only screen and (max-width: 768px) {
+  body {
+    height: auto;
+    margin-top: 50px;
+    height: calc(100vh - 50px);
+    overflow: auto;
+    background-color: rgba(32,32,32,0.8) !important;
+  }
+  .background-color{background-color: rgba(32,32,32,0);}
+  iframe {
+    height: 315px !important;
+  }
+  img {
+    width: 100%;
+  }
+
+}

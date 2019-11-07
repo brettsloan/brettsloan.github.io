@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+.background {
+  height: 100%;
+  background: url('../Pictures/landingPage.jpg') no-repeat center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #eaeaea;
+}
+#projects {
+  height: 100%;
+  background-image: linear-gradient(#B9B9B9, #FFF);
+}
+#projects img{
+  cursor: pointer;
+  display:block;
+  margin:auto;
+}
+#projects .headerPicture {
+  max-height: 100%;
+  max-width: 100%;
+  cursor: default;
+}
+
+/*-------MOBILE BACKGROUND---------*/
+
+@media only screen and (max-width: 650px) {
+      .background{
+        background: url('../Pictures/landingPageMobile.jpg') no-repeat center;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+  }
