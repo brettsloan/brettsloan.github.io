@@ -26,7 +26,8 @@ a {z-index: 100; color: #fff;}
 a:hover{transition: opacity 0.4s ease; opacity: 0.5;}
 
 img {
-  width: 50%;
+  width: 75%;
+  height: 90%;
 }
 
 /* PAGES & JS SWITCHING */
