@@ -4,8 +4,8 @@ $(document).ready(function () {
 	$(".a-link").on('click', function() {
 		var x = $(this).attr("alt");
 		x = x.slice( 1 );
-		$(".switch").fadeOut(500);
-		$("div#"+x).fadeIn(1000);
+		$(".switch").fadeOut(200);
+		$("div#"+x).fadeIn(2000);
 	});
 
 	//NavBar Corrections
