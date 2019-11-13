@@ -13,7 +13,7 @@ $(document).ready(function () {
 		$(".navbar-collapse").addClass("open");
 		var value = $('body').css('padding-top');
 		if (value === '20px') {
-			$('body').css('padding-top', '+=165');
+			$('body').css('padding-top', '+=120');
 		} else {
 			$('body').css('padding-top', '20px');
 		}
