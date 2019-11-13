@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Quicksand|Heebo:300');
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");
+html {height: 100%;}
+body {
+  height: 100%;
+  background: url('../Pics/background.jpeg') no-repeat center fixed;
+  background-size: cover;
+  color: #eaeaea;
+  font-family: Quicksand, sans-serif;
+}
+.main-wrapper {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.navbar-brand {
+  font-family: Lobster, cursive;
+  font-size: 1.8em;
+}
+.active {
+  font-weight: 400;
+}
+
+/*---------------FOOTER/HR/GOOGLEMAP EDIT----------------*/
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #eaeaea;
+  margin: 1em 1em;
+  padding: 0;
+}
+#map {
+  margin: auto;
+  height: 120px;
+  width: 90%;
+}
+footer {
+  font-family: 'Heebo', sans-serif;
+  background-color: rgba(34, 34, 34, 0.7);
+  padding-top: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .footer {height: 700px;}
+}
+
+/*---------------EMAIL POP UP EDIT----------------*/
+#email {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 10% 10%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  font-family: 'Heebo', sans-serif;
+  background-color: rgba(34, 34, 34, 1);
+  min-height: 100%;
+  min-width: 100%;
+}
+
+
+@media only screen and (max-width: 991px) {
+    #email {padding: 25% 5%;}
+}
+.closeButton:hover {
+    color: #af0000;
+    cursor: pointer;
+}
+.changein {
+  display: none;
+}

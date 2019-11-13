@@ -1,0 +1,1666 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Business Hub</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+  </head>
+
+
+  <body onLoad="window.scroll(0, 0)">
+    <div class="wrapper">
+
+      <!--SIDE BAR NAV-->
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+            <i class="glyphicon glyphicon-menu-hamburger"></i> MENU
+          </button>
+        </div>
+        <ul class="list-unstyled components">
+          <li>
+            <a class="selected aLink" href="#CI">
+              <i class="glyphicon glyphicon-home"></i>
+              Home
+            </a>
+
+            <!--Templates Full Menu includes four submenus-->
+            <a class="aLink" href="#fullSubmenu" data-toggle="collapse" aria-expanded="false">
+              <i class="glyphicon glyphicon-folder-open"></i>
+              Templates
+            </a>
+            <ul class="collapse list-unstyled smaller" id="fullSubmenu">
+              <a class="aLink" href="#SCSubmenu" data-toggle="collapse" aria-expanded="false">
+                1.0 - Stop Changes
+              </a>
+              <ul class="collapse list-unstyled smaller" id="SCSubmenu">
+                <li><a href="#CWA">1.1 - Change Withdrawal Amount</a></li>
+                <li><a href="#CWD">1.2 - Change Withdrawal Date</a></li>
+                <li><a href="#SPW">1.3 - Single Payment Withdrawal</a></li>
+                <li><a href="#SPC">1.4 - Single Payment Cacellation</a></li>
+                <li><a href="#CEFT">1.5 - Cancel EFT</a></li>
+                <li><a href="#PDDC">1.6 - Due Date Change</a></li>
+                <li><a href="#FC">1.7 - Frequency Change</a></li>
+                <li><a href="#NBNDDC">1.8 - New Banking</a></li>
+              </ul>
+
+              <a class="aLink" href="#CASubmenu" data-toggle="collapse" aria-expanded="false">
+                2.0 - Contract Adjustments
+              </a>
+              <ul class="collapse list-unstyled smaller" id="CASubmenu">
+                <li><a href="#ER">2.1 - Extension Request</a></li>
+                <li><a href="#TLM">2.2 - Temporary Modification</a></li>
+                <li><a href="#RWR">2.3 - Rewrite Request</a></li>
+                <li><a href="#WOB">2.4 - Waiver Of Balance</a></li>
+                <li><a href="#RPC">2.5 - Remaining Payment Calculator</a></li>
+              </ul>
+
+              <a class="aLink" href="#ERSubmenu" data-toggle="collapse" aria-expanded="false">
+                3.0 - Expense Requests
+              </a>
+              <ul class="collapse list-unstyled smaller" id="ERSubmenu">
+                <li><a href="#ST">3.1 - Skip Tracer</a></li>
+                <li><a href="#FV">3.2 - Field Visit</a></li>
+                <li><a href="#REPO">3.3 - Reposession</a></li>
+                <li><a href="#LC">3.4 - Legal Claim</a></li>
+                <li><a href="#LS">3.5 - Legal Search</a></li>
+              </ul>
+
+              <a class="aLink" href="#ACSubmenu" data-toggle="collapse" aria-expanded="false">
+                4.0 - Account Corrections
+              </a>
+              <ul class="collapse list-unstyled smaller" id="ACSubmenu">
+                <li><a href="#RC">4.1 - Representment Cancellation</a></li>
+                <li><a href="#RFR">4.2 - Fee Reversal</a></li>
+                <li><a href="#REFUND">4.3 - Refund</a></li>
+              </ul>
+            </ul>
+
+            <a class="aLink" href="#QSC">
+              <i class="glyphicon glyphicon-star"></i>
+              Quality Score Card
+            </a>
+
+            <a class="aLink" href="#Scripts">
+              <i class="glyphicon glyphicon-bullhorn"></i>
+              Scripts
+            </a>
+
+            <a class="aLink" href="#TAG">
+              <i class="glyphicon glyphicon-pushpin"></i>
+              Tips And Guidelines
+            </a>
+
+            <a class="aLink" href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
+              <i class="glyphicon glyphicon-envelope"></i>
+              Email Templates
+            </a>
+            <ul class="collapse list-unstyled smaller" id="pageSubmenu">
+              <li><a href="#ROCBM">Request for Contact</a></li>
+              <li><a href="#EVTBM">Verification Template</a></li>
+              <li><a href="#BTBM">Budget Template</a></li>
+              <li><a href="#CIBM">Contact Information</a></li>
+              <li><a href="#OBIBM">Online Banking Instructions</a></li>
+              <li><a href="#WUIBM">Western Union Instructions</a></li>
+              <li><a href="#PRBM">Payment Reminder Template</a></li>
+              <li><a href="#BABM">Broken Arrangement Template</a></li>
+            </ul>
+
+            <a class="aLink" href="#BEpageSubmenu" data-toggle="collapse" aria-expanded="false">
+              <i class="glyphicon glyphicon-envelope"></i>
+              Back End Emails
+            </a>
+            <ul class="collapse list-unstyled smaller" id="BEpageSubmenu">
+              <li><a href="#EOBM">1-29 DPD #1</a></li>
+              <li><a href="#ETBM">1-29 DPD #2</a></li>
+              <li><a href="#ETRBM">30-45 DPD #3</a></li>
+              <li><a href="#EFBM">30-45 DPD #4</a></li>
+              <li><a href="#EFVBM">46-55 DPD #5</a></li>
+              <li><a href="#ESBM">46-55 DPD #6</a></li>
+              <li><a href="#ESVBM">56-65 DPD #7</a></li>
+              <li><a href="#EEBM">66-75 DPD #8</a></li>
+              <li><a href="#ENBM">76+ DPD #9</a></li>
+            </ul>
+
+            <a class="aLink" href="#LSC">
+              <i class="glyphicon glyphicon-briefcase"></i>
+              Legal Status Codes
+            </a>
+
+            <a class="aLink" href="#PRF">
+              <i class="glyphicon glyphicon-paperclip"></i>
+              Payout Request Form
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!--END OF SIDEBAR NAV-->
+
+      <div id="content">
+
+        <!--Logo-->
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="row">
+              <img alt="Logo"
+              src="Pics/logo.png">
+            </div>
+            <div class="row col-xs-12">
+              <hr>
+            </div>
+          </div>
+        </nav>
+        <br>
+        <!--Beginning of Content-->
+
+
+
+        <!--Beginning of Home/Contact Information-->
+        <div class="switch" id="CI">
+          <h1>Contact Information:</h1>
+          <div class="line"></div>
+          <h3>Important Numbers:</h3>
+          <p>
+            Provincial Office: 1-234-567-8910<br>
+            Customer Service: 1-234-567-8910<br>
+            Transfer to CS: Ext 456<br>
+            Accounts Line: 1-234-567-8910<br>
+          </p>
+          <div class="line"></div>
+          <h3>Address:</h3>
+          <p>
+            Example Centre<br>
+            Suite 000<br>
+            123 4th Street<br>
+            Somewhere, ON<br>
+            A1B 2C3
+          </p>
+          <div class="line"></div>
+          <h3>Email:</h3>
+          <p>accounts@business.com</p>
+          <div class="line"></div>
+          <h3>Hours of Operation:</h3>
+          <p>
+            Monday – 9:00am – 9:30pm EST<br>
+            Tuesday – 9:00am – 9:30pm EST<br>
+            Wednesday – 9:00am – 9:30pm EST<br>
+            Thursday – 9:00am – 9:30pm EST<br>
+            Friday – 9:00am – 9:30pm EST<br>
+            Saturday – 9:00am – 5:30pm EST<br>
+            Sunday – Closed
+          </p>
+          <div class="line"></div>
+        </div>
+
+        <!--Beginning of Templates-->
+        <div class="switch off" id="fullSubmenu">
+          <h1>Example Templates:</h1>
+          <h3>We Need 8-11 Days For All Changes</h3>
+       	  <h3>Please do not file anything more 30 days in advance</h3>
+          <div class="line"></div>
+        </div>
+
+        <!--1.0 - Stop Changes (EFT/PAP)-->
+        <div class="switch off" id="SCSubmenu">
+          <h1>1.0 - Stop Changes (EFT/PAP)</h1>
+          <div class="line"></div>
+            <h3 id="CWA">1.1 - Change Withdrawal Amount</h3>
+            <textarea rows="4" cols="50" id="CWAc">
+1.1 - Change Withdrawal Amount
+
+Create Date:
+New Amount:</textarea>
+            <button class="sub" data-clipboard-action="copy"
+            data-clipboard-target="#CWAc">Copy</button>
+            <div class="line"></div>
+
+
+
+            <h3 id="CWD">1.2 - Change Withdrawal Date</h3>
+            <textarea rows="5" cols="50" id="CWDc">
+1.2 - Change Withdrawal Date
+
+Create Date:
+Current Date:
+New Date:</textarea>
+            <button class="sub" data-clipboard-action="copy"
+            data-clipboard-target="#CWDc">Copy</button>
+            <div class="line"></div>
+
+
+
+            <h3 id="SPW">1.3 - Single Payment Withdrawal</h3>
+            <textarea rows="5" cols="50" id="SPWc">
+1.3 - Single Payment Withdrawal
+
+Create Date:
+Payment Amount:
+Payment Date:</textarea>
+            <button class="sub" data-clipboard-action="copy"
+            data-clipboard-target="#SPWc">Copy</button>
+            <div class="line"></div>
+
+
+
+            <h3 id="SPC">1.4 - Single Payment Cancellation</h3>
+            <textarea rows="4" cols="50" id="SPCc">
+1.4 - Single Payment Cancellation
+
+Create Date:
+Payment Date:</textarea>
+            <button class="sub" data-clipboard-action="copy"
+            data-clipboard-target="#SPCc">Copy</button>
+            <div class="line"></div>
+
+
+
+            <h3 id="CEFT">1.5 - Cancel EFT</h3>
+            <textarea rows="7" cols="50" id="CEFTc">
+1.5 - Cancel EFT
+
+Create Date:
+Start Date:
+Still pull payment for:
+Reason for cancellation: Client has withdrawn consent
+Keep banking on file: Yes/No</textarea>
+          <h3>**5 business days needed for banking changes**</h3>
+            <button class="sub" data-clipboard-action="copy"
+            data-clipboard-target="#CEFTc">Copy</button>
+            <div class="line"></div>
+
+
+
+            <h3 id="PDDC">1.6 - Due Date Change</h3>
+            <textarea rows="9" cols="50" id="PDDCc">
+1.6 - Due Date Change
+
+Create Date:
+Move Date:
+To Date:
+Still Pull:
+Frequency:
+Amount:
+Current EFT/PAP: Yes/No</textarea>
+            <h3>
+              **Max 28 days moved on Monthly accounts<br>
+              **Max 13 days moved on BW/SM accounts
+            </h3>
+            <button class="sub" data-clipboard-action="copy"
+            data-clipboard-target="#PDDCc">Copy</button>
+            <div class="line"></div>
+
+
+
+            <h3 id="FC">1.7 - Frequency Change</h3>
+            <textarea rows="11" cols="50" id="FCc">
+1.7 - Frequency Change
+
+Create Date:
+Move Date:
+To Date:
+Still Pull:
+Current Freq:
+New Freq:
+Current Amount:
+New Amount:
+Current EFT/PAP: Yes/No</textarea>
+            <button class="sub" data-clipboard-action="copy"
+            data-clipboard-target="#FCc">Copy</button>
+            <div class="line"></div>
+
+
+
+            <h3 id="NBNDDC">1.8 - New Banking</h3>
+            <textarea rows="7" cols="50" id="NBNDDCc">
+1.8 - New Banking
+
+Create Date:
+Start Date:
+Frequency:
+Payment Amount:
+Form Indexed: Yes/No</textarea>
+            <button class="sub" data-clipboard-action="copy"
+            data-clipboard-target="#NBNDDCc">Copy</button>
+            <div class="line"></div>
+          </div>
+
+
+          <!--2.0 CONTRACT ADJUSTMENTS-->
+          <div class="switch off" id="CASubmenu">
+            <h1>2.0 - Contract Adjustments</h1>
+            <div class="line"></div>
+            <h3 id="BT">Budget Template</h3>
+            <textarea rows="31" cols="50" id="BTc">
+Budget Template
+
+INCOME
+Buyer Income:
+Co-buyer Income:
+Spouse Income:
+Child Support:
+Child Tax:
+Other:
+TOTAL:
+
+EXPENSES
+Mortgage:
+Rent:
+Hydro:
+City (garbage/water):
+Cable/Phone/Internet:
+Heating:
+Groceries:
+Gas:
+Car Payment:
+2nd Car Payment:
+Insurance:
+Child Care:
+Child Support:
+Other:
+Personal:
+
+TOTAL:
+
+Expendable Income:</textarea>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#BTc">Copy</button>
+          <div class="line"></div>
+
+
+
+          <h3 id="ER">2.1 - Extension Request</h3>
+          <textarea rows="13" cols="50" id="ERc">
+2.1 - Extension Template
+
+Create Date:
+Extension Date(s):
+Reg Pymt Amt:
+Frequency:
+Ext Pymt Amt:
+Days Past Due:
+Loan Open Date:
+Date Of Last Ext:
+
+Approved By:
+Approval Date:</textarea>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#ERc">Copy</button>
+          <div class="line"></div>
+
+
+
+          <h3 id="TLM">2.2 - Temporary Loan Modification</h3>
+          <textarea rows="14" cols="50" id="TLMc">
+2.2 - Temporary Loan Modification
+
+Create Date:
+Last Pymt Date:
+First Mod Pymt:
+Length of Mod:
+Reg Pymt Amt:
+Mod Pymt Amt:
+Frequency:
+Reason for Mod:
+EFT's Cancelled: Yes/No
+
+Approved By:
+Approval Date:</textarea>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#TLMc">Copy</button>
+
+          <h3 id="TLMLC">TLM LC Template</h3>
+          <textarea rows="8" cols="50" id="TLMLCc">
+Request TLM
+
+<><><><><><><><><><><><>
+RFD:
+PTP:
+Term:
+New Payment Amount:
+Start Date 1st PMT:</textarea>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#TLMLCc">Copy</button>
+          <div class="line"></div>
+
+          <h3 id="RWR">2.3 - Rewrite Request</h3>
+          <textarea rows="22" cols="50" id="RWRc">
+2.3 - Rewrite Request
+
+Create Date:
+Days Past Due:
+Reg Pymt Amt:
+Requested Pymt:
+Frequency:
+Last Pymt Date:
+Current Balance:
+Auction Value:
+Kilometers:
+Contract Start:
+Next Payment:
+Forms Indexed: Yes/No
+EFT's Cancelled: Yes/No
+Reason for Mod:
+
+
+Sup. Decision:
+LOS Reference #:
+LOS Input Date:
+Dir. Decision Date:</textarea>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#RWRc">Copy</button>
+          <div class="line"></div>
+
+          <h3 id="WOB">2.4 - Waiver of Balance</h3>
+          <textarea rows="13" cols="50" id="WOBc">
+2.4 - Waiver of Balance
+
+Create Date:
+Waiver Amount:
+Per Diem:
+Account Type:
+Settlement: Yes/No
+Settlement Amt:
+Waiver Reason:
+
+
+Approved By:
+Approval Date:</textarea>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#WOBc">Copy</button>
+          <div class="line"></div>
+
+
+
+          <h3 id="RPC">2.5 - Remaining Payment Calculator</h3>
+          <textarea rows="11" cols="50" id="RPCc">
+2.5 - Remaining Payment Calculator
+
+Create Date:
+Current Balance:
+All Open Fees:
+Payment Amount:
+Frequency:
+Next Pymt Date:
+Interest Rate:
+Est. Pymts Rem:
+Est. End Month:</textarea>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#RPCc">Copy</button>
+          <div class="line"></div>
+        </div>
+
+
+        <!--3.0 EXPENSE REQUESTS-->
+        <div class="switch off" id="ERSubmenu">
+          <h1>3.0 - Expense Requests</h1>
+          <div class="line"></div>
+
+
+
+          <h3 id="ST">3.1 - Skip Tracer</h3>
+          <textarea rows="8" cols="50" id="STc">
+3.1 - Skip Tracer
+
+Create Date:
+Bureaus Pulled: Yes/No
+Skip Company:
+Service: Locate/Door Knock/Cell Break
+Est. Cost:
+Forms Indexed: Yes/No</textarea>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#STc">Copy</button>
+          <div class="line"></div>
+
+
+
+          <h3 id="FV">3.2 - Field Visit</h3>
+          <textarea rows="6" cols="50" id="FVc">
+3.2 - Field Visit
+
+Create Date:
+Skip Company:
+Estimated Cost:
+Send To:</textarea>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#FVc">Copy</button>
+
+          <h3>Field Visit Template</h3>
+          <textarea rows="10" cols="50" id="FVLCc">
+<><><><><><><><><><><><><><><><><><><><><><><><><>
+SUBMITTED To Accounting for Field Visit
+
+Buyer is not responding to Requests for Contact.
+Requesting FV to spark contact and verify address and unit.
+Will be requsting agent to attend the following address: 123 45 Street, Nowhere, ON, T0M0M0.
+Time and any specific instructions. (If mail returned moved/unknown – do not send)
+<><><><><><><><><><><><><><><><><><><><><><><><><></textarea>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#FVLCc">Copy</button>
+          <div class="line"></div>
+
+
+
+          <h3 id="REPO">3.3 - Reposession</h3>
+          <textarea rows="17" cols="50" id="REPOc">
+3.3 - Reposession
+
+Create Date:
+RFR:
+
+
+Contract Info:
+Vehicle Y/M/M:
+Est. Kilometers:
+BlackBook Value:
+LIEN Pullled: Yes/No
+Forms Indexed: Yes/No
+Approved By:
+Approval Date:
+Est. Cost:
+Bailiff Company:
+Auction City:</textarea>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#REPOc">Copy</button>
+          <div class="line"></div>
+
+          <h3 id="LC">3.4 - Legal Claim</h3>
+          <textarea rows="22" cols="50" id="LCc">
+3.4 - Legal Claim
+
+Create Date:
+Vehicle Y/M/M:
+Current Balance:
+DL Sent On:
+Last Activity Date:
+Request Reason:
+
+
+Email(s):
+Province:
+Physical Address:
+Land Ownership:
+Work Name:
+Work Address:
+Confirmed On:
+Work Tenure:
+Forms Indexed: Yes/No
+Approved By:
+Approval Date:
+Est. Cost:</textarea>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#LCc">Copy</button>
+          <div class="line"></div>
+
+
+
+          <h3 id="LS">3.5 - Legal Search</h3>
+          <textarea rows="15" cols="50" id="LSc">
+3.5 - Legal Search
+
+Create Date:
+Search Type:
+Province:
+Physical Address:
+Legal Land Desc:
+Work Name:
+Forms Indexed: Yes/No
+Request Reason:
+
+
+Approved By:
+Approval Date:
+Est. Cost:</textarea>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#LSc">Copy</button>
+          <div class="line"></div>
+        </div>
+
+
+
+<!--4.0 - ACCOUNT CORRECTIONS-->
+        <div class="switch off" id="ACSubmenu">
+          <h1>4.0 - Account Corrections</h1>
+          <div class="line"></div>
+
+
+
+          <h3 id="RC">4.1 - Representment Cancellation</h3>
+          <textarea rows="10" cols="50" id="RCc">
+4.1 - Representment Cancellation
+
+Create Date:
+Orig Pymt Date:
+Reg Pymt Date:
+Pymt Amt:
+Cancel Reason:
+Charge Fee: Yes/No
+Approved By:
+Approval Date:</textarea>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#RCc">Copy</button>
+          <div class="line"></div>
+
+
+
+          <h3 id="RFR">4.2 - Fee Reversal</h3>
+          <textarea rows="7" cols="50" id="RFRc">
+4.2 - Fee Reversal
+
+Create Date:
+NSF Reversal Amt:
+Reversal Reason:
+Approved By:
+Approval Date:</textarea>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#RFRc">Copy</button>
+          <div class="line"></div>
+
+
+
+          <h3 id="REFUND">4.3 - Refund</h3>
+          <textarea rows="8" cols="50" id="REFUNDc">
+4.3 - Refund
+
+Create Date:
+Refund Amt:
+Refund Type:
+Refund Reason:
+Approved By:
+Approval Date:</textarea>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#REFUNDc">Copy</button>
+          <div class="line"></div>
+        </div>
+
+
+
+        <!--Beginning of Quality Score Card-->
+        <div class="switch off" id="QSC">
+          <h1>Quality Score Card:</h1>
+          <h3>Call Open</h3>
+          <p>* Did the Agent correctly disclose the Outbound Call Recording Disclosure Statement?</p>
+          <p class="lightGrey">&nbsp;* Were the proper points of customer verification completed?</p>
+          <h3>Collection Core Skills</h3>
+          <p>&nbsp;* Did the Agent identify and discuss the Reason for Delinquency?</p>
+          <p class="lightGrey">&nbsp; Did the Agent discuss and/or challenge account history, including payment history details within the conversation?
+          <br>&nbsp; <em>(IE: Broken promises, NSF's, difficult contact, abnormal RFD patterns, potentially compromised collateral or customer info)</em></p>
+          <h3>Responses / Rebuttals</h3>
+          <p>&nbsp; Did the Agent use appropriate responses to all client objections?</p>
+          <h3>Promise To Pay / Payment</h3>
+          <p>&nbsp; Did the Agent outline the total amount due & make arrangements for the full arrears balance?</p>
+          <p class="lightGrey">* Did the Agent negotiate to obtain payment arrangements and determine what could be paid today?</p>
+          <p>&nbsp; Did the Agent discuss Source of Funds and/or employment information to determine PTP validity?</p>
+          <p class="lightGrey">&nbsp; Did the Agent address/discuss the the next regular payment due?</p>
+          <p>&nbsp; Did the Agent discuss the benefits and possible consequences of payment/non-payment to create urgency?</p>
+          <p class="lightGrey">* Did the Agent recite the Mini-Miranda?
+          <br><em>(Prior to processing a Blue Pay - Visa Debit/Master card payment)</em></p>
+          <h3>Professionalism</h3>
+          <p>&nbsp; Did the Agent project courtesy and professionalism?
+          <br>&nbsp; <em>(IE: Strong product and client knowledge, proper tone, pace, control, word usage, etc.)</em></p>
+          <h3>Third Party Contact / Messages</h3>
+          <p>&nbsp; Were appropriate third party guidelines followed?
+          <br>&nbsp; <em>(Reference, employer, DNC'd third parties)</em></p>
+          <h3>Call Wrap Up</h3>
+          <p>&nbsp; Did the Agent or client recap all payment dates?</p>
+          <p class="lightGrey">&nbsp; Did the Agent or client recap all payment amounts?</p>
+          <p>&nbsp; Does the agent's note and actioned statuses reflect how the call went and include all pertinent details?
+          <br>&nbsp; <em>(Including the update of all demographics)</em></p>
+          <p class="lightGrey">* Did the Agent disposition the call properly through LiveVox?</p>
+          <p>&nbsp; Did the Agent set a proper follow-up date?</p>
+          <p>* If this criteria is missed, the agent scores zero for the entire category</p>
+        </div>
+
+        <!--Beginning of Scripts-->
+        <div class="switch off" id="Scripts">
+          <h1>Scripts:</h1>
+          <h2>Debit Script</h2>
+          <p>
+            You, (Client’s name), authorize for a single debit entry
+            to your debit card ending in **** to make
+            a onetime payment in the amount of $$, account # (Contract ID).
+            Your total payment of $$ will be dated on DD/MM/YYYY.
+            To authorize this payment, please state your first and last name.
+          </p>
+          <div class="line"></div>
+          <h2>Payout Request Script</h2>
+          <p>
+            Please be advised that the following provided amount is subject to change.
+            Providing all past payments clear and allowing for any additional fees associated with returned payment.
+            The balance due as of today’s day PAYOUT (30) includes 30 days of per diem at PER DIEM.
+            If there is a discrepancy between this amount verbally provided and an amount provided in writing,
+            the amount in writing will be the honored amount.  Please acknowledge this statement by stating your first and last name.
+          </p>
+          <div class="line"></div>
+          <h2>Frequency Change Script</h2>
+          <p>
+            You are giving permission to charge a fee of $$
+            to process the requested frequency change.
+            This fee will be interest free and will be added to the end
+            of your contract. Do you acknowledge this adjustment?
+          </p>
+          <div class="line"></div>
+          <h2>Representment Campaign</h2>
+          <ul>
+            <li>
+              We tried to pull your scheduled payment from your account and there was insufficient funds in the account.
+            </li>
+            <li>
+              We will be attempting to pull that payment again. Are the funds there now?
+            </li>
+            <li>
+              What is going on that the funds weren’t available?
+            </li>
+            <li>
+              When can you make up the payment? (If the funds won’t be there for the representment.)
+            </li>
+          </ul>
+          <div class="line"></div>
+          <h2>Reference Campaign</h2>
+          <ul>
+            <li>
+    	         I was given your name and telephone on a credit application for (client)
+            </li>
+            <li>
+              *Once confirmed state Outbound Disclosure (This call may be monitored...)*
+            </li>
+            <li>
+              Is this a friend or relative of yours?
+            </li>
+            <li>
+              I am calling today to verify place of employment, home address and contact phone numbers.
+              Do you know where (the client) is currently working? A home address? What number do you use to contact (the client)?
+            </li>
+            <li>
+              Would you be able to pass a message to (the client) for me?
+            </li>
+          </ul>
+          <div class="line"></div>
+          <h2>Employer Campaign</h2>
+          <ul>
+            <li>
+              I am calling to complete an employment verification. Who should I be speaking to?
+            </li>
+            <li>
+              Can you verify that (the client) is still one of your employees?
+            </li>
+            <li>
+              Do you have multiple business locations or just this one?
+              What is the address of the location (the client) works at?
+            </li>
+            <li>
+              Is there a designated employee parking lot at that location?
+              Is it accessible to the public or secured?
+            </li>
+            <li>
+              Is (the client) at work today? Would it be possible to speak to him/her?
+            </li>
+            <li>
+              Does he/she work shift work? What are the regular operating hours?
+            </li>
+            <li>
+              If I can’t speak to (the client), can I leave an urgent message for him/her?
+            </li>
+          </ul>
+          <div class="line"></div>
+          <h2>DNC Third Party Numbers</h2>
+          <ul>
+            <li>
+              If the Third party asks us not to call again, please send an email to your Supervisor with the number and the reason it needs to be DNC’d.
+            </li>
+            <li>
+              The Supervisor will tick the DNC box if the Supervisor concurs.
+            </li>
+            <li>
+              If a new employer is located, the old employer information can be removed and replaced with the new info.
+            </li>
+          </ul>
+          <div class="line"></div>
+          <h2>Subsequent Third Party Calls</h2>
+          <ul>
+            <li>
+              If we speak to an employer or a reference a 2nd or 3rd time, ensure we acknowledge the first conversation:
+            </li>
+            <ol>
+              <li>
+                Is the client still an employee?  Still working at the same business address?
+                Same shift?  Can I speak to him/her now?
+              </li>
+              <li>
+                Does the reference have any new contact information, new address or new contact information?
+                Was the reference successful in passing along a message the last time we spoke?
+              </li>
+            </ol>
+          </ul>
+          <div class="line"></div>
+        </div>
+
+        <!--Beginning of Tips/Guidelines-->
+        <div class="switch off" id="TAG">
+          <h1>Tips:</h1>
+          <h2>Extension Criteria:</h2>
+          <p>
+            Minimum Age of Loan: 180 Days Old<br>
+            Minimum Monthly Equivalent Payments Made: 6 Months<br>
+            Verified Contact (number and address for Borrower[s]): Yes<br>
+            Vehicle Functioning and in Their Possession : Yes<br>
+            With Extension, along with any other payments, will report loan as: < 31 Days Past Due<br>
+            Number of Extensions Available: Minimum 1 Per Contract Year<br>
+            After Temporary Loan Modification: TLM was less than 12 months ago<br>
+            Previous Extension(s) Permitted in Current Contract Year: No<br>
+            Borrower Currently in Temporary Loan Modification: No<br>
+            Agreed to $$ Fee: Yes<br>
+            Good Faith Payment: 25% of payment(s) unless under 11 DPD
+          </p>
+          <div class="line"></div>
+          <h3>Temporary Loan Modification Criteria:</h3>
+          <p>
+            Max term of reduced payments: 6 Months<br>
+            Maximum Payment Reduction: 40% of Current Payment<br>
+            Maximum Current Delinquency: < 30 Days Past Due<br>
+            Fee: No Fee Required<br>
+            Good Faith Payment: No GFP Required<br>
+            Budget on File: Yes<br>
+          </p>
+          <div class="line"></div>
+          <h2>Frequency Change Formulas</h2>
+          <ul>
+            <li>Monthly - BW: 12*(payment)/26</li>
+            <li>Monthly - SM: (payment)/2</li>
+            <li>BW - Monthly: 26*(payment)/12</li>
+            <li>BW - SM: 26*(payment)/24</li>
+            <li>SM - Monthly: (payment)*2</li>
+            <li>SM - BW: 24*(payment)/26</li>
+          </ul>
+          <div class="line"></div>
+          <h1>Frequency Change & Due Date Change Guidelines:</h1>
+          <h3>Due Date Change (DDC):</h3>
+          <p class="subP">
+            The process of permanently moving a payment schedule forward or
+            backwards a set number of days while maintaining the same frequency.
+          </p>
+          <h2>Frequency Change (FC):</h2>
+          <p class="subP">
+            The process of permanently changing the frequency of a
+            payment schedule (biweekly, monthly, or semi-monthly payment schedule).
+          </p>
+          <h2>DDC Rules/Guidelines:</h2>
+          <ul class="subL">
+            <li>No administration fee is charged.</li>
+            <li>
+              The future requested payment date cannot go past
+              the client’s next or previous amortized due date
+              (the original schedule). In other words, the client cannot
+              move their schedule more than a billing period ahead.
+            </li>
+          </ul>
+          <h2>FC Rules/Guidelines:</h2>
+          <ul class="subL">
+            <li>Account must be up to date.</li>
+            <li>
+              In order to finalize the FC, the first payment
+              on the new schedule must clear. If it does not,
+              the administration fee will not be charged
+              and the frequency of the account will revert back
+              to its original status.
+            </li>
+            <li>
+              The New Due Date must be greater than 10 BUSINESS days
+              from the previous payment on the old frequency.
+            </li>
+            <li>
+              An administration fee of $75.00 will be charged,
+              the administration fee script must be read to the client.
+            </li>
+          </ul>
+          <div class="line"></div>
+          <h1>Voluntary Surrender:</h1>
+          <h2>*BUDGET MUST BE ON FILE*</h2>
+          <h2>Credit Impact:</h2>
+          <ul class="subL">
+            <li>
+              Repossession remains on their bureau for 7 years and it will be
+              extremely unlikely they’re able to get any form of credit for at
+              least this period of time
+            </li>
+          </ul>
+          <h2>Fees:</h2>
+          <ul class="subL">
+            <li>Responsible for any towing/storage/auction fees until vehicle is sold</li>
+          </ul>
+          <h2>Deficiency Balance</h2>
+          <ul class="subL">
+            <li>Buyer is still responsible for whatever amount remains on the loan after vehicle is sold and funds are applied to the account</li>
+          </ul>
+          <div class="line"></div>
+        </div>
+
+        <!--Beginning of Email Templates-->
+        <div class="switch off" id="pageSubmenu">
+          <h1>Email Templates:</h1>
+          <h1 id="ROCBM">Contact Request</h1>
+          <p>Subject Line - Request for Contact</p>
+          <p id="ROC">
+            Despite multiple attempts, we have been unable to make contact
+            with you regarding your account. Any member of our
+            Account Maintenance Team would be pleased to discuss options
+            for your account. We value your business. Unfortunately
+            we are unable to discuss specifics over e-mail, so please contact
+            Account Maintenance Team for assistance Toll Free at
+            1-234-567-8910.<br><br>
+            Our hours of operation are as follows:<br>
+            Monday – 9:00am – 9:30pm EST<br>
+            Tuesday – 9:00am – 9:30pm EST<br>
+            Wednesday – 9:00am – 9:30pm EST<br>
+            Thursday – 9:00am – 9:30pm EST<br>
+            Friday – 9:00am – 9:30pm EST<br>
+            Saturday – 9:00am – 5:30pm EST<br>
+            Sunday – Closed<br><br>
+            Thank you,
+          </p>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#ROC">Copy</button>
+          <div class="line"></div>
+          <h1 id="EVTBM">Email Verification Template</h1>
+          <p>Subject Line - Email Verification</p>
+          <p id="EVT">
+            I can assist you further regarding the details of your account
+            once I have verified your email.<br><br>
+            Please reply and list your:<br>
+            Name<br>
+            Address<br>
+            Best to reach phone number<br>
+            Employment<br>
+            Date of birth<br>
+            Vehicle<br><br>
+            Thank you,
+          </p>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#EVT">Copy</button>
+          <div class="line"></div>
+          <h1 id="BTBM">Budget Template</h1>
+          <p>Subject Line – Budget Template</p>
+          <p id="BT">
+            As requested, please find a template outline for your budget
+            posted below. Please fill out all lines to the best of your ability.
+            Once completed, return it and contact us at 1-234-567-8910
+            as soon as possible:<br><br><br>
+            BUDGET TEMPLATE<br><br>
+            INCOME<br>
+            Primary Income:<br>
+            Co-buyer Income:<br>
+            Spouse Income:<br>
+            Child Support:<br>
+            Child Tax:<br>
+            Other:<br><br>
+            TOTAL:<br><br><br>
+            EXPENSES<br>
+            Mortgage:<br>
+            Rent:<br>
+            Hydro:<br>
+            City (garbage/water):<br>
+            Cable/Phone/Internet:<br>
+            Heating:<br>
+            Groceries:<br>
+            Gas:<br>
+            Car Payment:<br>
+            2nd Car Payment:<br>
+            Insurance:<br>
+            Child Care:<br>
+            Child Support:<br>
+            Other:<br>
+            Personal:<br><br>
+            TOTAL:<br><br>
+            Expendable Income (total income minus total expenses):<br><br><br>
+            Our hours of operation are as follows:<br>
+            Monday – 9:00am – 9:30pm EST<br>
+            Tuesday – 9:00am – 9:30pm EST<br>
+            Wednesday – 9:00am – 9:30pm EST<br>
+            Thursday – 9:00am – 9:30pm EST<br>
+            Friday – 9:00am – 9:30pm EST<br>
+            Saturday – 9:00am – 5:30pm EST<br>
+            Sunday – Closed<br><br>
+            Thank you,
+          </p>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#BT">Copy</button>
+          <div class="line"></div>
+          <h1 id="CIBM">Contact Information</h1>
+          <p>Subject Line – Contact Information</p>
+          <p id="CI">
+            As requested, please find our toll free contact numbers listed below:<br>
+            1-234-567-8910 – Toll Free Account Maintenance line<br>
+            1-234-567-8910 – Fax number<br><br>
+            Our hours of operation are as follows:<br>
+            Monday – 9:00am – 9:30pm EST<br>
+            Tuesday – 9:00am – 9:30pm EST<br>
+            Wednesday – 9:00am – 9:30pm EST<br>
+            Thursday – 9:00am – 9:30pm EST<br>
+            Friday – 9:00am – 9:30pm EST<br>
+            Saturday – 9:00am – 5:30pm EST<br>
+            Sunday – Closed<br><br>
+            Thank you,
+          </p>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#CI">Copy</button>
+          <div class="line"></div>
+          <h1 id="OBIBM">Online Banking Instructions</h1>
+          <p>Subject Line – Online Banking Payment Instructions</p>
+          <p id="OBI">
+            As requested, please find instructions on how to complete
+            an Online Banking payment below:<br><br>
+            • Log-in to your account on your financial institution’s website<br>
+            • Navigate to the “Pay Bills” tab<br>
+            • Navigate to the “Add/Edit Payees” tab and enter "Business Example”<br>
+            • Enter your account number<br>
+            • Enter the amount of the discussed payment and complete
+            the necessary steps for the transaction to process<br><br>
+            Once a payment has successfully been made, please contact our
+            ce back toll free at 1-234-567-8910 and report the payment
+            made with the Confirmation Number provided.<br><br>
+            This information is also available online at our website
+            www.businessexample.net under the “Make a Payment” tab.<br><br>
+            Our hours of operation are as follows:<br>
+            Monday – 9:00am – 9:30pm EST<br>
+            Tuesday – 9:00am – 9:30pm EST<br>
+            Wednesday – 9:00am – 9:30pm EST<br>
+            Thursday – 9:00am – 9:30pm EST<br>
+            Friday – 9:00am – 9:30pm EST<br>
+            Saturday – 9:00am – 5:30pm EST<br>
+            Sunday – Closed<br><br>
+            Thank you,
+          </p>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#OBI">Copy</button>
+          <div class="line"></div>
+          <h1 id="WUIBM">Western Union Instructions</h1>
+          <p>Subject Line – Western Union Payment Instructions</p>
+          <p id="WUI">
+            As requested, please find instructions on how to complete
+            a Western Union payment below:<br><br>
+            • Pick up a blue “Quick Collect” form<br>
+            • Under “Pay To” write:  Business<br>
+            • Under “Code City” write: Business<br>
+            • Under “Province” write: ON<br>
+            • Under “Account Number” write your account number<br>
+            • Under “Amount” write the amount of the discussed payment<br><br>
+            Once a payment has successfully been made, please contact our
+            ce back toll free at 1-234-567-8910 and report the payment
+            made with the Money Transfer Control Number (MTCN) provided.<br><br>
+            This information is also available online at our website
+            www.businessexample.net under the “Make a Payment” tab.<br><br>
+            Our hours of operation are as follows:<br>
+            Monday – 9:00am – 9:30pm EST<br>
+            Tuesday – 9:00am – 9:30pm EST<br>
+            Wednesday – 9:00am – 9:30pm EST<br>
+            Thursday – 9:00am – 9:30pm EST<br>
+            Friday – 9:00am – 9:30pm EST<br>
+            Saturday – 9:00am – 5:30pm EST<br>
+            Sunday – Closed<br><br>
+            Thank you,
+          </p>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#WUI">Copy</button>
+          <div class="line"></div>
+          <h1 id="PRBM">Payment Reminder Email</h1>
+          <p>Subject Line - Payment Reminder</p>
+          <p id="PR">
+            I am emailing you regarding the payment arrangement
+            that we have on file for you. Please ensure you contact
+            the office with confirmation that this payment has been made.<br><br>
+            Our hours of operation are as follows:<br>
+            Monday – 9:00am – 9:30pm EST<br>
+            Tuesday – 9:00am – 9:30pm EST<br>
+            Wednesday – 9:00am – 9:30pm EST<br>
+            Thursday – 9:00am – 9:30pm EST<br>
+            Friday – 9:00am – 9:30pm EST<br>
+            Saturday – 9:00am – 5:30pm EST<br>
+            Sunday – Closed<br><br>
+            Thank you,
+          </p>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#PR">Copy</button>
+          <div class="line"></div>
+          <h1 id="BABM">Broken Arrangement Template</h1>
+          <p>Subject Line - Broken Arrangement</p>
+          <p id="BA">
+            I am emailing you regarding the broken arrangement we have on file.
+            It’s imperative that we speak with you to make alternate
+            arrangements and discuss this matter.<br><br>
+            Our hours of operation are as follows:<br>
+            Monday – 9:00am – 9:30pm EST<br>
+            Tuesday – 9:00am – 9:30pm EST<br>
+            Wednesday – 9:00am – 9:30pm EST<br>
+            Thursday – 9:00am – 9:30pm EST<br>
+            Friday – 9:00am – 9:30pm EST<br>
+            Saturday – 9:00am – 5:30pm EST<br>
+            Sunday – Closed<br><br>
+            Thank you,
+          </p>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#BA">Copy</button>
+          <div class="line"></div>
+        </div>
+
+        <!--Beginning of Back End Email Templates-->
+        <div class="switch off" id="BEpageSubmenu">
+          <h1>Back End Email Templates:</h1>
+          <h1 id="EOBM">1 - 29 DPD Email #1</h1>
+          <p>Subject Line - Request for Contact</p>
+          <p id="EO">
+            Good Morning/Afternoon ,<br><br>
+            I am emailing you regarding your [Vehicle type].
+            I need you to contact the ce at 1-234-567-8910 to
+            discuss your account.<br><br>
+            Thank you,
+          </p>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#EO">Copy</button>
+          <div class="line"></div>
+          <h1 id="ETBM">1 - 29 DPD Email #2</h1>
+          <p>Subject Line - Request for Contact</p>
+          <p id="ET">
+            Good Morning/Afternoon ,<br><br>
+            I am emailing you regarding your [Vehicle type]. We have been
+            trying to reach you with no success. Please be advised the
+            hours of operation below and speak to a representative as
+            soon as possible as we may have options to help you with your
+            financial situation.<br><br>
+            Thank you,
+          </p>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#ET">Copy</button>
+          <div class="line"></div>
+          <h1 id="ETRBM">30 – 45 DPD Email #3</h1>
+          <p>Subject Line - Request for Contact</p>
+          <p id="ETR">
+            At this time we have been unable to reach you regarding your vehicle
+            loan. Please be advised that this is an urgent
+            matter and would like to discuss options to help with your loan.
+            Please contact us at the number below and any representative will
+            be able to assist you.<br><br>
+            Thank you,
+          </p>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#ETR">Copy</button>
+          <div class="line"></div>
+          <h1 id="EFBM">30 – 45 DPD Email #4</h1>
+          <p>Subject Line - Request for Contact</p>
+          <p id="EF">
+            It’s imperative that you contact us IMMEDIATELY regarding
+            your vehicle loan as we have tried many times to contact
+            you with no response. We have options to help you with your loan
+            but without contact we will be proceeding with your file. Please
+            contact us as soon as possible to speak to an agent at the
+            hours noted below.<br><br>
+            Thank you,
+          </p>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#EF">Copy</button>
+          <div class="line"></div>
+          <h1 id="EFVBM">46 – 55 DPD Email #5</h1>
+          <p>Subject Line - Request for Contact</p>
+          <p id="EFV">
+            Your account is currently in a serious standing with us and
+            is in need of your IMMEDIATE assistance. We do have options to help
+            you accommodate your financial stress at this time. Contact us
+            as soon as possible so we can help you. Failure to do so
+            will result in a decision being made on your file.<br><br>
+            Thank you,
+          </p>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#EFV">Copy</button>
+          <div class="line"></div>
+          <h1 id="ESBM">46 – 55 DPD Email #6</h1>
+          <p>Subject Line - Request for Contact</p>
+          <p id="ES">
+            At this time we have not spoken with you regarding your vehicle
+            loan. Your file is in a serious standing and we would
+            like to help you by ring options to help you financially. If
+            we do not speak with you before 12PM MST tomorrow your file
+            with be presented to my direct supervisor.<br><br>
+            Thank you,
+          </p>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#ES">Copy</button>
+          <div class="line"></div>
+          <h1 id="ESVBM">56 - 65 DPD Email #7</h1>
+          <p>Subject Line - Request for Contact</p>
+          <p id="ESV">
+            Your account is currently being reviewed by my supervisor
+            for a decision. To avoid further action please contact us
+            and speak to a representative immediately as they may have options
+            to help you regarding your financial stress at this time. Hours
+            of operations can be noted below.<br><br>
+            Thank you,
+          </p>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#ESV">Copy</button>
+          <div class="line"></div>
+          <h1 id="EEBM">66 – 75 DPD Email #8</h1>
+          <p>Subject Line - Request for Contact</p>
+          <p id="EE">
+            Your IMMEDIATE action is required regarding your [vehicle type].
+            Your file is with my supervisor therefore further action may
+            be in place with your file. Your attention to this matter is
+            required IMMEDIATELY.<br><br>
+            Thank you,
+          </p>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#EE">Copy</button>
+          <div class="line"></div>
+          <h1 id="ENBM">76+ DPD Email #9</h1>
+          <p>Subject Line - Request for Contact</p>
+          <p id="EN">
+            As of today your file is currently [DPD] and in a serious standing
+            which may jeopardize your ability to retain in your vehicle.
+            Your IMMEDIATE ACTION is required. The hours of operation are
+            noted below.<br>
+            This may be your FINAL NOTICE.<br><br>
+            Thank you,
+          </p>
+          <button class="sub" data-clipboard-action="copy"
+          data-clipboard-target="#EN">Copy</button>
+          <div class="line"></div>
+        </div>
+
+        <!--Beginning of Legal Status Codes-->
+        <div class="switch off" id="LSC">
+          <h1>Legal Status Codes:</h1>
+          <table>
+            <tr>
+              <th>Value</th>
+              <th>Description</th>
+              <th>Call Y/N</th>
+              <th>Alt Info</th>
+            </tr>
+            <tr>
+              <td>BK - Bankrupt</td>
+              <td>Client has gone bankrupt</td>
+              <td>NO</td>
+              <td>** Status code usually in termed loans only</td>
+            </tr>
+            <tr>
+              <td>BK – CP Annulled</td>
+              <td>
+                Client has filed a Consumer proposal but did not follow
+                through with payments so is now anulled and able to
+                resume collection
+              </td>
+              <td>YES</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>BK – CPN</td>
+              <td>
+                Client has filed a Consumer proposal and we
+                voted no to the claim
+              </td>
+              <td>YES</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>BK - CPY</td>
+              <td>
+                Client has filed a Consumer proposal and we
+                voted yes to the claim
+              </td>
+              <td>NO</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>BK – Discharged</td>
+              <td>
+                Client has abided by all rules and has been discharged.
+                No longer in bankruptcy status
+              </td>
+              <td>YES</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>BK – Dispute</td>
+              <td>Client filed bankruptcy- Trustee is disputing banko claim</td>
+              <td>YES</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>BK – OPD</td>
+              <td>
+                Client has filed for orderly payment of debt.
+                We never participates in this
+              </td>
+              <td>YES</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>BK – POC</td>
+              <td>
+                Client has filed bankruptcy.
+                Trustee has denied our proof of claim
+              </td>
+              <td>NO</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>BK – Reaff</td>
+              <td>
+                Client has filed bankruptcy. Reaffirmation of debt letter
+                has been sent to client
+              </td>
+              <td>YES</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>BK - Reaff - R</td>
+              <td>
+                We have received a completed copy of the reaffirmation
+                of debt letter
+              </td>
+              <td>YES</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>BK - Removed</td>
+              <td>Client has been removed from bankruptcy status</td>
+              <td>YES</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>BK - Repo</td>
+              <td>
+                Client has filed bankruptcy and is in the
+                repossession status. See Repo Status code for
+                if you should call
+              </td>
+              <td>SEE REPO CODES</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>BK - ROI - K</td>
+              <td>
+                We have received a release of interest from the trustee.
+                Client has intentions on keeping unit
+              </td>
+              <td>YES</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>BK - ROI - S</td>
+              <td>
+                We have received a release of interest from the trustee.
+                Client has intentions on surrendering unit
+              </td>
+              <td>NO</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>BK - Stay</td>
+              <td>We have received bankruptcy documents- In a stay of proceedings</td>
+              <td>NO</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>RP - Assigned</td>
+              <td>Assigned for repossession</td>
+              <td>NO</td>
+              <td>** At this time please report these to Supervisor</td>
+            </tr>
+            <tr>
+              <td>RP - Auction</td>
+              <td>Vehicle has been seized and is at auction</td>
+              <td>NO</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>RP - Bailiee</td>
+              <td>
+                Vehicle has been tagged under a bailiee's undertaking.
+                Technically seized under the provincial law
+              </td>
+              <td>NO</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>RP - Dealer</td>
+              <td>Vehicle has been seized and is at a dealership</td>
+              <td>NO</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>RP - Disabled</td>
+              <td>GPS Tracker on vehicle has been disabled</td>
+              <td>NO</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>RP - Hold</td>
+              <td>
+                Vehicle is assigned for repo but agent has put on hold.
+                Files on hold require PTP for full arrears in 30 days.
+                No exceptions without supervisor approval
+              </td>
+              <td>YES</td>
+              <td>
+                ** Agents must stick to prev PTP. If no results
+                report to supervisor
+              </td>
+            </tr>
+            <tr>
+              <td>RP - Impound</td>
+              <td>
+                Vehicle has been seized and/or is at an impound
+                waiting on transport
+              </td>
+              <td>NO</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>RP - Police</td>
+              <td>
+                Vehicle has been picked up by police and is being
+                held until certain date
+              </td>
+              <td>NO</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>RP - Reedem</td>
+              <td>
+                Vehicle had been repossessed in the past and client
+                completed redemption process
+              </td>
+              <td>YES</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>RP - Sold</td>
+              <td>Vehicle has been seized and sold at auction</td>
+              <td>NO</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>RP - Store-Repair</td>
+              <td>Vehicle has been seized and requires repairs or is in storage</td>
+              <td>NO</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>RP - Warning</td>
+              <td>GPS Tracker on vehicle has been set with a warning</td>
+              <td>NO</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>RP - WOF</td>
+              <td>Vehicle has been sold at auction and we're waiting on funds</td>
+              <td>NO</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>OTH - 2/3rds</td>
+              <td>
+                Loan balance is 2/3rds paid. Unable to seize without
+                voluntary surrender
+              </td>
+              <td>YES</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>OTH - 3/4ers</td>
+              <td>
+                Loan balance is 3/4 paid. Unable to seize without
+                voluntary surrender
+              </td>
+              <td>YES</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>OTH - Burrard-C</td>
+              <td>File has been sent for legal action to lawyer- contingent</td>
+              <td>NO</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>OTH - Burrard-L</td>
+              <td>File has been sent to legal letter</td>
+              <td>YES</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>OTH - Burrard-Letter</td>
+              <td>File has been sent to legal for contact/Demand letter</td>
+              <td>YES</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>OTH - Farm</td>
+              <td>Farm Debt plated </td>
+              <td>YES</td>
+              <td>** Agents must IMM report any Farm plated files to supervisor</td>
+            </tr>
+            <tr>
+              <td>OTH - Field Call</td>
+              <td>File has been sent to the bailiff for a field call</td>
+              <td>YES</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>OTH - Field Visit</td>
+              <td>File has been sent to the bailiff for a field visit/door knock</td>
+              <td>YES</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>OTH - Fraud</td>
+              <td>File is fraud</td>
+              <td>YES</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>OTH - FRS</td>
+              <td>File has been outsourced to 3rd party collection agency - FRS</td>
+              <td>NO</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>OTH - GPS</td>
+              <td>Vehicle has a GPS tracker unit</td>
+              <td>NO</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>OTH - Insure Claim</td>
+              <td>Vehicle has been in accident and open insurance claim pending</td>
+              <td>YES</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>OTH - No Coll</td>
+              <td>
+                No collateral - Could be ins WO with balance
+                remaining or vehicle not running etc
+              </td>
+              <td>YES</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>OTH – No Insure</td>
+              <td>No valid insurance policy on file</td>
+              <td>YES</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>OTH - Parked</td>
+              <td>Vehicle only has parked insurance</td>
+              <td>YES</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>OTH - Quebec</td>
+              <td>Vehicle is located in Quebec</td>
+              <td>YES</td>
+              <td>
+                ** Agents must immediately advise if client is
+                thinking or already moved to PQ due to provincial legislation
+              </td>
+            </tr>
+            <tr>
+              <td>OTH - Skip</td>
+              <td>File is a skip - no contact with client</td>
+              <td>YES</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>OTH - US</td>
+              <td>Vehicle is located in the US</td>
+              <td>NO</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>OTH - Related Loan</td>
+              <td>Personal loan</td>
+              <td>NO</td>
+              <td>** Report to supervisor</td>
+            </tr>
+            <tr>
+              <td>OTH - Payment Plan</td>
+              <td></td>
+              <td>NO</td>
+              <td>** Xfer to 234-567-8910</td>
+            </tr>
+            <tr>
+              <td>OTH - VNS</td>
+              <td></td>
+              <td>NO</td>
+              <td>** Xfer to 234-567-8910</td>
+            </tr>
+          </table>
+          <div class="line"></div>
+        </div>
+
+        <!--Beginning of Payout Request Form-->
+        <div class="switch off" id="PRF">
+          <h1>Payout Request Form:</h1>
+          <a href=# target="_blank">
+            <button class="sub">Payout Request PDF</button>
+          </a>
+          <p>
+            1. In Google Chrome, fill out the form and then click the <b>PRINT</b> or the <b>PRINTER</b> button.<br>
+            2. Under "Destination", click on "Change..." and click on Save as PDF.<br>
+            3. It will now let you save it as an edited PDF
+          </p>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="JS/jquery-1.12.0.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+    <script src="JS/main.js" type="text/javascript"></script>
+  </body>
+</html>

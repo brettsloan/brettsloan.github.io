@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title> </title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/navbar.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  </head>
+  <body>
+
+
+
+    <!--                          NAVBAR                 -->
+    <nav id="navBar" class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+      <img class="navbar-img" src="Pics/Logo3(2).png"/>
+      <button onclick="myFunction(this)"
+        class="yes navbar-toggler btn btn-outline-dark"
+        type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <div>
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav nav">
+          <li class="nav-item">
+            <a class="nav-link a-link active" href="#about" onclick="hideNav()">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link a-link" href="#music" onclick="hideNav()">Music</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link a-link" href="#portfolio" onclick="hideNav()">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link a-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+    <div class="container-fluid">
+
+
+
+      <!--                          ABOUT ME                 -->
+      <div id="about" class="switch">
+        <div class="row">
+          <p class="contact-text w-100 floatOverText">
+          </p>  
+          <img class="promo-img" src="Pics\Promo2.jpg">
+        </div>
+        <div class="row">
+          <a href="https://songwhip.com/song/phat-pratt/what-you-want" target="_blank">
+            <img class="promo-img" src="Pics\What You Want.jpg" alt="What You Want Album Art">
+          </a>
+        </div>
+        <div class="row">
+          <img class="promo-img" src="Pics\Promo1.jpg">
+        </div>
+        <div class="row">
+          <a href="https://songwhip.com/song/phat-pratt/slippin-away" target="_blank">
+            <img class="promo-img" src="Pics\Slipping Away.jpg" alt="Slippin' Away Album Art">
+          </a>
+        </div>
+        <div class="row">
+          <img class="promo-img" src="Pics\Promo3.jpg">
+        </div>
+      </div>
+
+
+
+      <!--                          MUSIC                 -->
+      <div id="music" class="hidden switch">
+        <div class="row">
+          <a href="https://songwhip.com/song/phat-pratt/what-you-want" target="_blank">
+            <img class="promo-img" src="Pics\What You Want.jpg" alt="What You Want Album Art">
+          </a>
+        </div>
+        <div class="row">
+          <a href="https://songwhip.com/song/phat-pratt/slippin-away" target="_blank">
+            <img class="promo-img" src="Pics\Slipping Away.jpg" alt="Slippin' Away Album Art">
+          </a>
+        </div>
+      </div>
+
+
+
+      <!--                          PORTFOLIO                 -->
+      <div id="portfolio" class="hidden switch">
+        <div class="row">
+          <p class="contact-text w-100 floatOverText extraMarginTop">Produced, Engineered & Mixed by Phatt Pratt</p>
+          <img class="promo-img" src="Pics\BN.jpg">
+          <iframe src="https://open.spotify.com/embed/album/6DC8Lbti5yv5pIlaEp1QOC" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class="row">
+          <p class="contact-text w-100 floatOverText extraMarginTop">Produced, Engineered & Mixed by Phatt Pratt</p>
+          <img class="promo-img" src="Pics\YTOO.png">
+          <iframe src="https://open.spotify.com/embed/album/2j45cWuRHXHbiIVbU5juwf" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class="row">
+          <p class="contact-text w-100 floatOverText extraMarginTop">Produced, Engineered & Mixed by Phatt Pratt</p>
+          <img class="promo-img" src="Pics\IDK.jpg">
+          <iframe src="https://open.spotify.com/embed/album/3SXlF2H93v9RYtr5DeX0ZH" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class="row">
+          <img class="promo-img" src="Pics\Promo3.jpg">
+        </div>
+      </div>
+
+
+
+      <!--                          CONTACT                 -->
+      <div id="contact" class="hidden switch">
+        <div class="row">
+          <img class="contact-img" src="Pics\Promo1.jpg">
+          <div class="center-div">
+            <div class="contact-text w-100">
+              <p>
+                phatpratt905@gmail.com
+              </p>
+            </div>
+
+            <form method="post" name="myemailform" action="form-to-email.php" onsubmit="thankYou()">
+              <div class="form-row">
+                <div class="form-group col-6">
+                  <input class="form-control" type="text" placeholder="NAME" name="name" required>
+                </div>
+                <div class="form-group col-6">
+                  <input class="form-control" type="email" placeholder="EMAIL" name="email">
+                </div>
+                <div class="form-group col-12">
+                  <textarea class="form-control" placeholder="MESSAGE" name="message" required></textarea>
+                </div>
+                <div class="form-group col-12">
+                  <input class="btn btn-light btn-lg btn-block" type="submit" name="submit" value="Send">
+                </div>
+              </div>
+            </form>
+            <div class="row">
+              <div class="col-md-3 col-6 text-center">
+                <a href="https://www.facebook.com/greg.pratt.9843" target="_blank" class="nav-link">
+                  <i class="fab fa-facebook fa-2x"></i>
+                </a>
+              </div>
+              <div class="col-md-3 col-6 text-center">
+                <a href="https://twitter.com/phatpratt905" target="_blank" class="nav-link">
+                  <i class="fab fa-twitter fa-2x"></i>
+                </a>
+              </div>
+              <div class="col-md-3 col-6 text-center">
+                <a href="https://instagram.com/phatpratt905?utm_source=ig_profile_share&igshid=12z7csbqlya8d" target="_blank" class="nav-link">
+                  <i class="fab fa-instagram fa-2x"></i>
+                </a>
+              </div>
+              <div class="col-md-3 col-6 text-center">
+                <a href="https://open.spotify.com/artist/6OIaiuWMekjXb0DAYf1INb?si=QWMH_eVrSvetXNAPi1O9xg" target="_blank" class="nav-link">
+                  <i class="fab fa-spotify fa-2x"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="Scripts/scripts.js"></script>
+  </body>
+</html>
