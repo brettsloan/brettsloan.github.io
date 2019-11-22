@@ -3,9 +3,9 @@ $(document).ready(function () {
 	// Top Links
 	$(".a-link").on('click', function() {
 		var x = $(this).attr("alt");
-		x = x.slice( 1 );
-		$(".switch").fadeOut(200);
-		$("div#"+x).fadeIn(2000);
+        x = x.slice(1);
+        $(".switch").fadeOut(0);
+		$("div#"+x).fadeIn(200);
 	});
 
 	//NavBar Corrections
