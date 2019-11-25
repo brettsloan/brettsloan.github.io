@@ -25,6 +25,12 @@ $(document).ready(function () {
                 $("span.active-bar").prev("span.link-line").addClass("active-bar");
                 $(x).removeClass("active-bar");
                 var y = $("span.active-bar").attr("alt");
+                $(".a-link").removeClass("active");
+                $(".a-link").each(function () {
+                    if ($(this).attr("alt") == y) {
+                        $(this).addClass("active");
+                    }
+                });
                 y = y.slice(1);
                 $(".switch").fadeOut(0);
                 $("div#" + y).fadeIn(200);
@@ -34,6 +40,12 @@ $(document).ready(function () {
                 $("span.active-bar").next("span.link-line").addClass("active-bar");
                 $(x).removeClass("active-bar");
                 var y = $("span.active-bar").attr("alt");
+                $(".a-link").removeClass("active");
+                $(".a-link").each(function () {
+                    if ($(this).attr("alt") == y) {
+                        $(this).addClass("active");
+                    }
+                });
                 y = y.slice(1);
                 $(".switch").fadeOut(0);
                 $("div#" + y).fadeIn(200);
