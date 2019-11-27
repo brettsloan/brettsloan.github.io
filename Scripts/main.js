@@ -22,33 +22,63 @@ $(document).ready(function () {
         switch (e.which) {
             case 37: //left
                 var x = $("span.active-bar");
-                $("span.active-bar").prev("span.link-line").addClass("active-bar");
+                $(x).prev("span.link-line").addClass("active-bar");
                 $(x).removeClass("active-bar");
-                var y = $("span.active-bar").attr("alt");
                 $(".a-link").removeClass("active");
-                $(".a-link").each(function () {
-                    if ($(this).attr("alt") == y) {
-                        $(this).addClass("active");
-                    }
-                });
-                y = y.slice(1);
-                $(".switch").fadeOut(0);
-                $("div#" + y).fadeIn(200);
+
+                if ($(".a-link").hasClass("active-bar") || $(".a-link").hasClass("active")) {
+                    var y = $("span.active-bar").attr("alt");
+                    $(".a-link").each(function () {
+                        if ($(this).attr("alt") == y) {
+                            $(this).addClass("active");
+                        }
+                    });
+                    y = y.slice(1);
+                    $(".switch").fadeOut(0);
+                    $("div#" + y).fadeIn(200);
+                } else {
+                    $(".link-line").last().addClass("active-bar");
+                    $("li span").last().addClass("active");
+                    var y = $("span.active-bar").attr("alt");
+                    $(".a-link").each(function () {
+                        if ($(this).attr("alt") == y) {
+                            $(this).addClass("active");
+                        }
+                    });
+                    y = y.slice(1);
+                    $(".switch").fadeOut(0);
+                    $("div#" + y).fadeIn(200);
+                }
             break;
             case 39: //right
                 var x = $("span.active-bar");
-                $("span.active-bar").next("span.link-line").addClass("active-bar");
+                $(x).next("span.link-line").addClass("active-bar");
                 $(x).removeClass("active-bar");
-                var y = $("span.active-bar").attr("alt");
                 $(".a-link").removeClass("active");
-                $(".a-link").each(function () {
-                    if ($(this).attr("alt") == y) {
-                        $(this).addClass("active");
-                    }
-                });
-                y = y.slice(1);
-                $(".switch").fadeOut(0);
-                $("div#" + y).fadeIn(200);
+
+                if ($(".a-link").hasClass("active-bar") || $(".a-link").hasClass("active")) {
+                    var y = $("span.active-bar").attr("alt");
+                    $(".a-link").each(function () {
+                        if ($(this).attr("alt") == y) {
+                            $(this).addClass("active");
+                        }
+                    });
+                    y = y.slice(1);
+                    $(".switch").fadeOut(0);
+                    $("div#" + y).fadeIn(200);
+                } else {
+                    $(".link-line").first().addClass("active-bar");
+                    $("li span").first().addClass("active");
+                    var y = $("span.active-bar").attr("alt");
+                    $(".a-link").each(function () {
+                        if ($(this).attr("alt") == y) {
+                            $(this).addClass("active");
+                        }
+                    });
+                    y = y.slice(1);
+                    $(".switch").fadeOut(0);
+                    $("div#" + y).fadeIn(200);
+                }
             break;
         }
 
