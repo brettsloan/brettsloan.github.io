@@ -84,6 +84,15 @@ $(document).ready(function () {
 
     });
 
+    $(".padding").mouseenter(function () {
+        $(".card", this).fadeTo("slow", 0);
+        $(".card-body", this).fadeTo("slow", 1);
+    });
+    $(".padding").mouseleave(function () {
+        $(".card", this).fadeTo("slow", 1);
+        $(".card-body", this).fadeTo("slow",0);
+    });
+
 	//NavBar Corrections
 	$(".mt-1").on('click', function() {
 		$(".navbar-collapse").addClass("open");
