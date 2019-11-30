@@ -91,6 +91,7 @@ $(document).ready(function () {
 
     });
 
+    //Swipe support for mobile
     var start = null;
     window.addEventListener("touchstart", function (event) {
         if (event.touches.length === 1) {
@@ -141,58 +142,37 @@ $(document).ready(function () {
             }
             if (end < start - offset) {
                 //a right -> left swipe
-                alert("Swipe Left");
+                var x = $("span.active-bar");
+                $(x).prev("span.link-line").addClass("active-bar");
+                $(x).removeClass("active-bar");
+                $(".a-link").removeClass("active");
+
+                if ($(".a-link").hasClass("active-bar") || $(".a-link").hasClass("active")) {
+                    var y = $("span.active-bar").attr("alt");
+                    $(".a-link").each(function () {
+                        if ($(this).attr("alt") == y) {
+                            $(this).addClass("active");
+                        }
+                    });
+                    y = y.slice(1);
+                    $(".switch").fadeOut(0);
+                    $("div#" + y).fadeIn(200);
+                } else {
+                    $(".link-line").last().addClass("active-bar");
+                    $("li span").last().addClass("active");
+                    var y = $("span.active-bar").attr("alt");
+                    $(".a-link").each(function () {
+                        if ($(this).attr("alt") == y) {
+                            $(this).addClass("active");
+                        }
+                    });
+                    y = y.slice(1);
+                    $(".switch").fadeOut(0);
+                    $("div#" + y).fadeIn(200);
+                }
             }
         }
     });
-
-
-
-
-
-    $(function () {
-        $(window).on("swipeleft", swipeleftHandler);
-
-        function swipeleftHandler() {
-            var x = $("span.active-bar");
-            $(x).prev("span.link-line").addClass("active-bar");
-            $(x).removeClass("active-bar");
-            $(".a-link").removeClass("active");
-
-            if ($(".a-link").hasClass("active-bar") || $(".a-link").hasClass("active")) {
-                var y = $("span.active-bar").attr("alt");
-                $(".a-link").each(function () {
-                    if ($(this).attr("alt") == y) {
-                        $(this).addClass("active");
-                    }
-                });
-                y = y.slice(1);
-                $(".switch").fadeOut(0);
-                $("div#" + y).fadeIn(200);
-            } else {
-                $(".link-line").last().addClass("active-bar");
-                $("li span").last().addClass("active");
-                var y = $("span.active-bar").attr("alt");
-                $(".a-link").each(function () {
-                    if ($(this).attr("alt") == y) {
-                        $(this).addClass("active");
-                    }
-                });
-                y = y.slice(1);
-                $(".switch").fadeOut(0);
-                $("div#" + y).fadeIn(200);
-            }
-        }
-    });
-
-    $(function () {
-        $(window).on("swiperight", swiperightHandler);
-
-        function swiperightHandler() {
-
-        }
-    });
-
 
     //On mouse hover, toggle grid backgrounds to fade out and information to fade in
     $(".padding-none").mouseenter(function () {
