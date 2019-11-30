@@ -34,6 +34,11 @@ $(document).ready(function () {
                 y = y.slice(1);
                 $(".switch").fadeOut(0);
                 $("div#" + y).fadeIn(200);
+                $(".a-link").each(function () {
+                    if $()
+
+                });
+
             break;
             case 39: //right
                 var x = $("span.active-bar");
