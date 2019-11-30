@@ -18,7 +18,9 @@ body {
 span {cursor: pointer;}
 .hidden {display: none;}
 .padding-none {padding: 0;}
-
+h1, h2, p {
+    text-shadow: 2px 2px 2px #3d3d3d;
+}
 
 /*NAVBAR EDITS*/
 .navbar, .navbar-dark, .bg-dark {background-color: rgba(52,58,64,0) !important;}

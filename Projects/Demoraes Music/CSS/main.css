@@ -38,10 +38,21 @@ footer {
   background-color: rgba(34, 34, 34, 0.7);
   padding-top: 10px;
 }
-@media only screen and (max-width: 768px) {
-  .footer {height: 700px;}
+@media only screen and (max-width: 767px) {
+    .paddingTop {
+        padding-top: 100px;
+        height: 75% !important;
+    }
+    footer {
+        position: static !important;
+        background-color: rgba(34, 34, 34, 1);
+    }
 }
-
+@media only screen and (max-width: 575px) {
+    .row {
+        padding-top: 100px;
+    }
+}
 /*---------------EMAIL POP UP EDIT----------------*/
 #email {
   display: none;
