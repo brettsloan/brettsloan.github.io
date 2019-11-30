@@ -90,75 +90,108 @@ $(document).ready(function () {
         }
 
     });
-    $(function () {
-        $(window).on("swipeleft", swipeleftHandler);
 
-        function swipeleftHandler() {
-            var x = $("span.active-bar");
-            $(x).prev("span.link-line").addClass("active-bar");
-            $(x).removeClass("active-bar");
-            $(".a-link").removeClass("active");
+    var start = null;
+    window.addEventListener("touchstart", function (event) {
+        if (event.touches.length === 1) {
+            //just one finger touched
+            start = event.touches.item(0).clientX;
+        } else {
+            //a second finger hit the screen, abort the touch
+            start = null;
+        }
+    });
 
-            if ($(".a-link").hasClass("active-bar") || $(".a-link").hasClass("active")) {
-                var y = $("span.active-bar").attr("alt");
-                $(".a-link").each(function () {
-                    if ($(this).attr("alt") == y) {
-                        $(this).addClass("active");
-                    }
-                });
-                y = y.slice(1);
-                $(".switch").fadeOut(0);
-                $("div#" + y).fadeIn(200);
-            } else {
-                $(".link-line").last().addClass("active-bar");
-                $("li span").last().addClass("active");
-                var y = $("span.active-bar").attr("alt");
-                $(".a-link").each(function () {
-                    if ($(this).attr("alt") == y) {
-                        $(this).addClass("active");
-                    }
-                });
-                y = y.slice(1);
-                $(".switch").fadeOut(0);
-                $("div#" + y).fadeIn(200);
+    window.addEventListener("touchend", function (event) {
+        var offset = 100;//at least 100px are a swipe
+        if (start) {
+            //the only finger that hit the screen left it
+            var end = event.changedTouches.item(0).clientX;
+
+            if (end > start + offset) {
+                //a left -> right swipe
+                alert("Swipe Right");
+            }
+            if (end < start - offset) {
+                //a right -> left swipe
+                alert("Swipe Left");
             }
         }
     });
 
-    $(function () {
-        $(window).on("swiperight", swiperightHandler);
 
-        function swiperightHandler() {
-            var x = $("span.active-bar");
-            $(x).next("span.link-line").addClass("active-bar");
-            $(x).removeClass("active-bar");
-            $(".a-link").removeClass("active");
 
-            if ($(".a-link").hasClass("active-bar") || $(".a-link").hasClass("active")) {
-                var y = $("span.active-bar").attr("alt");
-                $(".a-link").each(function () {
-                    if ($(this).attr("alt") == y) {
-                        $(this).addClass("active");
-                    }
-                });
-                y = y.slice(1);
-                $(".switch").fadeOut(0);
-                $("div#" + y).fadeIn(200);
-            } else {
-                $(".link-line").first().addClass("active-bar");
-                $("li span").first().addClass("active");
-                var y = $("span.active-bar").attr("alt");
-                $(".a-link").each(function () {
-                    if ($(this).attr("alt") == y) {
-                        $(this).addClass("active");
-                    }
-                });
-                y = y.slice(1);
-                $(".switch").fadeOut(0);
-                $("div#" + y).fadeIn(200);
-            }
-        }
-    });
+
+
+    //$(function () {
+    //    $(window).on("swipeleft", swipeleftHandler);
+
+    //    function swipeleftHandler() {
+    //        var x = $("span.active-bar");
+    //        $(x).prev("span.link-line").addClass("active-bar");
+    //        $(x).removeClass("active-bar");
+    //        $(".a-link").removeClass("active");
+
+    //        if ($(".a-link").hasClass("active-bar") || $(".a-link").hasClass("active")) {
+    //            var y = $("span.active-bar").attr("alt");
+    //            $(".a-link").each(function () {
+    //                if ($(this).attr("alt") == y) {
+    //                    $(this).addClass("active");
+    //                }
+    //            });
+    //            y = y.slice(1);
+    //            $(".switch").fadeOut(0);
+    //            $("div#" + y).fadeIn(200);
+    //        } else {
+    //            $(".link-line").last().addClass("active-bar");
+    //            $("li span").last().addClass("active");
+    //            var y = $("span.active-bar").attr("alt");
+    //            $(".a-link").each(function () {
+    //                if ($(this).attr("alt") == y) {
+    //                    $(this).addClass("active");
+    //                }
+    //            });
+    //            y = y.slice(1);
+    //            $(".switch").fadeOut(0);
+    //            $("div#" + y).fadeIn(200);
+    //        }
+    //    }
+    //});
+
+    //$(function () {
+    //    $(window).on("swiperight", swiperightHandler);
+
+    //    function swiperightHandler() {
+    //        var x = $("span.active-bar");
+    //        $(x).next("span.link-line").addClass("active-bar");
+    //        $(x).removeClass("active-bar");
+    //        $(".a-link").removeClass("active");
+
+    //        if ($(".a-link").hasClass("active-bar") || $(".a-link").hasClass("active")) {
+    //            var y = $("span.active-bar").attr("alt");
+    //            $(".a-link").each(function () {
+    //                if ($(this).attr("alt") == y) {
+    //                    $(this).addClass("active");
+    //                }
+    //            });
+    //            y = y.slice(1);
+    //            $(".switch").fadeOut(0);
+    //            $("div#" + y).fadeIn(200);
+    //        } else {
+    //            $(".link-line").first().addClass("active-bar");
+    //            $("li span").first().addClass("active");
+    //            var y = $("span.active-bar").attr("alt");
+    //            $(".a-link").each(function () {
+    //                if ($(this).attr("alt") == y) {
+    //                    $(this).addClass("active");
+    //                }
+    //            });
+    //            y = y.slice(1);
+    //            $(".switch").fadeOut(0);
+    //            $("div#" + y).fadeIn(200);
+    //        }
+    //    }
+    //});
 
 
     //On mouse hover, toggle grid backgrounds to fade out and information to fade in
