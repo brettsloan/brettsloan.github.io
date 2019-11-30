@@ -2,6 +2,7 @@
 
 /*MOBILE FIRST CONTENT*/
 
+
 /*MAIN BODY*/
 html {height: 100%;}
 body {
@@ -25,6 +26,9 @@ span {cursor: pointer;}
 .active-bar {border-top: solid 4px #f5f5f5 !important;}
 .link-bar {bottom: 40px; padding: 0 30px;}
 .link-line {padding: 0px !important; height: 15px; border-top: solid 1px #f5f5f5;}
+
+
+/*BAR ANIMATION*/
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
@@ -32,21 +36,21 @@ span {cursor: pointer;}
     margin: 6px 0;
     transition: 0.4s;
 }
-
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-7.75px, 7.75px);
     transform: rotate(-45deg) translate(-7.75px, 7.75px);
 }
-
 .change .bar2 {opacity: 0;}
-
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-7.75px, -7.75px);
     transform: rotate(45deg) translate(-7.75px, -7.75px);
 }
+
+
 /*PORTFOLIO GRID*/
 .card {height: 100%; width: 100%;}
-.card-body {width: 100%; top:0; position: absolute; opacity: 0;}
+.card-body {width: 100%; top:15%; position: absolute; opacity: 0;}
+.remove-if-small {display: none;}
 .col-xl-4:nth-child(1) .card {background: url("../Pics/DEM.png") center center/cover;}
 .col-xl-4:nth-child(2) .card {background: url("../Pics/Oakrest.png") center center/cover;}
 .col-xl-4:nth-child(3) .card {background: url("../Pics/PhatPratt.png") center center/cover;}
@@ -55,10 +59,14 @@ span {cursor: pointer;}
 .col-xl-4:nth-child(6) .card {background: url("../Pics/BusinessHub.png") center center/cover;}
 
 
-
-
-/*DESKTOP CONTENT*/
+/*MEDIUM CONTENT*/
 @media only screen and (min-width: 767px) {
-    .card-body {top: 25%; left: 0; position: absolute; opacity: 0;}
+    .card-body {top:25%;}
+    .remove-if-small {display: block;}
+}
+
+
+/*DESKTOP (LARGE) CONTENT*/
+@media only screen and (min-width: 992px) {
     p {font-size: 2em;}
 }

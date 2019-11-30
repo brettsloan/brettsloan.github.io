@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
-	// Bottom Links & Bar
+    // Bottom Links & Bar
     //Click link for active class
-	$(".a-link").on('click', function() {
+    $(".a-link").on('click', function () {
         var x = $(this).attr("alt");
 
         //remove active & active-bar from all a-links
@@ -56,7 +56,7 @@ $(document).ready(function () {
                     $(".switch").fadeOut(0);
                     $("div#" + y).fadeIn(200);
                 }
-            break;
+                break;
             case 39: //right
                 var x = $("span.active-bar");
                 $(x).next("span.link-line").addClass("active-bar");
@@ -86,9 +86,71 @@ $(document).ready(function () {
                     $(".switch").fadeOut(0);
                     $("div#" + y).fadeIn(200);
                 }
-            break;
+                break;
         }
 
+    });
+
+    $(window).on("swipeLeft", function () {
+        var x = $("span.active-bar");
+        $(x).prev("span.link-line").addClass("active-bar");
+        $(x).removeClass("active-bar");
+        $(".a-link").removeClass("active");
+
+        if ($(".a-link").hasClass("active-bar") || $(".a-link").hasClass("active")) {
+            var y = $("span.active-bar").attr("alt");
+            $(".a-link").each(function () {
+                if ($(this).attr("alt") == y) {
+                    $(this).addClass("active");
+                }
+            });
+            y = y.slice(1);
+            $(".switch").fadeOut(0);
+            $("div#" + y).fadeIn(200);
+        } else {
+            $(".link-line").last().addClass("active-bar");
+            $("li span").last().addClass("active");
+            var y = $("span.active-bar").attr("alt");
+            $(".a-link").each(function () {
+                if ($(this).attr("alt") == y) {
+                    $(this).addClass("active");
+                }
+            });
+            y = y.slice(1);
+            $(".switch").fadeOut(0);
+            $("div#" + y).fadeIn(200);
+        }
+    });
+
+    $(window).on("swiperight", function () {
+        var x = $("span.active-bar");
+        $(x).next("span.link-line").addClass("active-bar");
+        $(x).removeClass("active-bar");
+        $(".a-link").removeClass("active");
+
+        if ($(".a-link").hasClass("active-bar") || $(".a-link").hasClass("active")) {
+            var y = $("span.active-bar").attr("alt");
+            $(".a-link").each(function () {
+                if ($(this).attr("alt") == y) {
+                    $(this).addClass("active");
+                }
+            });
+            y = y.slice(1);
+            $(".switch").fadeOut(0);
+            $("div#" + y).fadeIn(200);
+        } else {
+            $(".link-line").first().addClass("active-bar");
+            $("li span").first().addClass("active");
+            var y = $("span.active-bar").attr("alt");
+            $(".a-link").each(function () {
+                if ($(this).attr("alt") == y) {
+                    $(this).addClass("active");
+                }
+            });
+            y = y.slice(1);
+            $(".switch").fadeOut(0);
+            $("div#" + y).fadeIn(200);
+        }
     });
 
     //On mouse hover, toggle grid backgrounds to fade out and information to fade in
@@ -98,10 +160,10 @@ $(document).ready(function () {
     });
     $(".padding-none").mouseleave(function () {
         $(".card", this).fadeTo("slow", 1);
-        $(".card-body", this).fadeTo("slow",0);
+        $(".card-body", this).fadeTo("slow", 0);
     });
 
-	//NavBar Corrections
+    //NavBar Corrections
     $(".mt-1").on('click', function () {
         $(this).toggleClass("change");
         var value = $(".link-bar").css("bottom");
@@ -111,7 +173,6 @@ $(document).ready(function () {
         } else {
             $(".main-wrapper").css("max-height", "calc(100vh - 70px");
             $(".link-bar").css("bottom", "40px");
-		}
-	});
-
+        }
+    });
 });
