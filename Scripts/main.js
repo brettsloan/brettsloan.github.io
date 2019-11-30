@@ -112,37 +112,6 @@ $(document).ready(function () {
             if (end > start + offset) {
                 //a left -> right swipe
                 var x = $("span.active-bar");
-                $(x).next("span.link-line").addClass("active-bar");
-                $(x).removeClass("active-bar");
-                $(".a-link").removeClass("active");
-
-                if ($(".a-link").hasClass("active-bar") || $(".a-link").hasClass("active")) {
-                    var y = $("span.active-bar").attr("alt");
-                    $(".a-link").each(function () {
-                        if ($(this).attr("alt") == y) {
-                            $(this).addClass("active");
-                        }
-                    });
-                    y = y.slice(1);
-                    $(".switch").fadeOut(0);
-                    $("div#" + y).fadeIn(200);
-                } else {
-                    $(".link-line").first().addClass("active-bar");
-                    $("li span").first().addClass("active");
-                    var y = $("span.active-bar").attr("alt");
-                    $(".a-link").each(function () {
-                        if ($(this).attr("alt") == y) {
-                            $(this).addClass("active");
-                        }
-                    });
-                    y = y.slice(1);
-                    $(".switch").fadeOut(0);
-                    $("div#" + y).fadeIn(200);
-                }
-            }
-            if (end < start - offset) {
-                //a right -> left swipe
-                var x = $("span.active-bar");
                 $(x).prev("span.link-line").addClass("active-bar");
                 $(x).removeClass("active-bar");
                 $(".a-link").removeClass("active");
@@ -170,6 +139,39 @@ $(document).ready(function () {
                     $(".switch").fadeOut(0);
                     $("div#" + y).fadeIn(200);
                 }
+
+            }
+            if (end < start - offset) {
+                //a right -> left swipe
+                var x = $("span.active-bar");
+                $(x).next("span.link-line").addClass("active-bar");
+                $(x).removeClass("active-bar");
+                $(".a-link").removeClass("active");
+
+                if ($(".a-link").hasClass("active-bar") || $(".a-link").hasClass("active")) {
+                    var y = $("span.active-bar").attr("alt");
+                    $(".a-link").each(function () {
+                        if ($(this).attr("alt") == y) {
+                            $(this).addClass("active");
+                        }
+                    });
+                    y = y.slice(1);
+                    $(".switch").fadeOut(0);
+                    $("div#" + y).fadeIn(200);
+                } else {
+                    $(".link-line").first().addClass("active-bar");
+                    $("li span").first().addClass("active");
+                    var y = $("span.active-bar").attr("alt");
+                    $(".a-link").each(function () {
+                        if ($(this).attr("alt") == y) {
+                            $(this).addClass("active");
+                        }
+                    });
+                    y = y.slice(1);
+                    $(".switch").fadeOut(0);
+                    $("div#" + y).fadeIn(200);
+                }
+
             }
         }
     });
