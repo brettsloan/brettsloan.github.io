@@ -110,7 +110,34 @@ $(document).ready(function () {
 
             if (end > start + offset) {
                 //a left -> right swipe
-                alert("Swipe Right");
+                var x = $("span.active-bar");
+                $(x).next("span.link-line").addClass("active-bar");
+                $(x).removeClass("active-bar");
+                $(".a-link").removeClass("active");
+
+                if ($(".a-link").hasClass("active-bar") || $(".a-link").hasClass("active")) {
+                    var y = $("span.active-bar").attr("alt");
+                    $(".a-link").each(function () {
+                        if ($(this).attr("alt") == y) {
+                            $(this).addClass("active");
+                        }
+                    });
+                    y = y.slice(1);
+                    $(".switch").fadeOut(0);
+                    $("div#" + y).fadeIn(200);
+                } else {
+                    $(".link-line").first().addClass("active-bar");
+                    $("li span").first().addClass("active");
+                    var y = $("span.active-bar").attr("alt");
+                    $(".a-link").each(function () {
+                        if ($(this).attr("alt") == y) {
+                            $(this).addClass("active");
+                        }
+                    });
+                    y = y.slice(1);
+                    $(".switch").fadeOut(0);
+                    $("div#" + y).fadeIn(200);
+                }
             }
             if (end < start - offset) {
                 //a right -> left swipe
@@ -123,75 +150,48 @@ $(document).ready(function () {
 
 
 
-    //$(function () {
-    //    $(window).on("swipeleft", swipeleftHandler);
+    $(function () {
+        $(window).on("swipeleft", swipeleftHandler);
 
-    //    function swipeleftHandler() {
-    //        var x = $("span.active-bar");
-    //        $(x).prev("span.link-line").addClass("active-bar");
-    //        $(x).removeClass("active-bar");
-    //        $(".a-link").removeClass("active");
+        function swipeleftHandler() {
+            var x = $("span.active-bar");
+            $(x).prev("span.link-line").addClass("active-bar");
+            $(x).removeClass("active-bar");
+            $(".a-link").removeClass("active");
 
-    //        if ($(".a-link").hasClass("active-bar") || $(".a-link").hasClass("active")) {
-    //            var y = $("span.active-bar").attr("alt");
-    //            $(".a-link").each(function () {
-    //                if ($(this).attr("alt") == y) {
-    //                    $(this).addClass("active");
-    //                }
-    //            });
-    //            y = y.slice(1);
-    //            $(".switch").fadeOut(0);
-    //            $("div#" + y).fadeIn(200);
-    //        } else {
-    //            $(".link-line").last().addClass("active-bar");
-    //            $("li span").last().addClass("active");
-    //            var y = $("span.active-bar").attr("alt");
-    //            $(".a-link").each(function () {
-    //                if ($(this).attr("alt") == y) {
-    //                    $(this).addClass("active");
-    //                }
-    //            });
-    //            y = y.slice(1);
-    //            $(".switch").fadeOut(0);
-    //            $("div#" + y).fadeIn(200);
-    //        }
-    //    }
-    //});
+            if ($(".a-link").hasClass("active-bar") || $(".a-link").hasClass("active")) {
+                var y = $("span.active-bar").attr("alt");
+                $(".a-link").each(function () {
+                    if ($(this).attr("alt") == y) {
+                        $(this).addClass("active");
+                    }
+                });
+                y = y.slice(1);
+                $(".switch").fadeOut(0);
+                $("div#" + y).fadeIn(200);
+            } else {
+                $(".link-line").last().addClass("active-bar");
+                $("li span").last().addClass("active");
+                var y = $("span.active-bar").attr("alt");
+                $(".a-link").each(function () {
+                    if ($(this).attr("alt") == y) {
+                        $(this).addClass("active");
+                    }
+                });
+                y = y.slice(1);
+                $(".switch").fadeOut(0);
+                $("div#" + y).fadeIn(200);
+            }
+        }
+    });
 
-    //$(function () {
-    //    $(window).on("swiperight", swiperightHandler);
+    $(function () {
+        $(window).on("swiperight", swiperightHandler);
 
-    //    function swiperightHandler() {
-    //        var x = $("span.active-bar");
-    //        $(x).next("span.link-line").addClass("active-bar");
-    //        $(x).removeClass("active-bar");
-    //        $(".a-link").removeClass("active");
+        function swiperightHandler() {
 
-    //        if ($(".a-link").hasClass("active-bar") || $(".a-link").hasClass("active")) {
-    //            var y = $("span.active-bar").attr("alt");
-    //            $(".a-link").each(function () {
-    //                if ($(this).attr("alt") == y) {
-    //                    $(this).addClass("active");
-    //                }
-    //            });
-    //            y = y.slice(1);
-    //            $(".switch").fadeOut(0);
-    //            $("div#" + y).fadeIn(200);
-    //        } else {
-    //            $(".link-line").first().addClass("active-bar");
-    //            $("li span").first().addClass("active");
-    //            var y = $("span.active-bar").attr("alt");
-    //            $(".a-link").each(function () {
-    //                if ($(this).attr("alt") == y) {
-    //                    $(this).addClass("active");
-    //                }
-    //            });
-    //            y = y.slice(1);
-    //            $(".switch").fadeOut(0);
-    //            $("div#" + y).fadeIn(200);
-    //        }
-    //    }
-    //});
+        }
+    });
 
 
     //On mouse hover, toggle grid backgrounds to fade out and information to fade in
