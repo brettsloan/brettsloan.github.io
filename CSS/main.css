@@ -14,7 +14,8 @@ body {
     letter-spacing: 1.5px;
     overflow: hidden;
 }
-.main-wrapper {height: 70%; max-height: calc(100vh - 70px); overflow-y: auto;}
+.main-wrapper-fallback{max-height: 70% !important;}
+.main-wrapper {max-height: calc(100vh - 70px) !important; overflow-y: auto;}
 span {cursor: pointer;}
 .hidden {display: none;}
 .padding-none {padding: 0;}
