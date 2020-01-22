@@ -12,7 +12,7 @@ function login() {
   userName = upperCaseUserName(userName);
   users.forEach(function(x) {
     if(userName === x) {
-      window.open("RifcoHomePage.html",'_self',false);
+      window.open("HomePage.html",'_self',false);
     }
   });
 }
