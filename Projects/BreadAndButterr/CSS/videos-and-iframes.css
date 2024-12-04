@@ -1,0 +1,47 @@
+/* VIDEO PLAYERS - YouTube, Twitch, Twitter & TikTok  */
+
+iframe {
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  -webkit-animation: fadeIn 1.5s;
+  animation: fadeIn 1.5s;
+}
+
+.iframe-website {height: 500px;}
+
+.iframe-youtube-video {aspect-ratio: 16 / 9 !important;}
+
+.tiktok-embed {
+  width: 315px !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+/* Hovers and Animations */
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@media only screen and (min-width: 900px) {
+
+  .iframe-website {
+    width: 90vw;
+    height: auto;
+    aspect-ratio:16 / 9;
+  }
+  .iframe-youtube-videos{
+    width: 45vw;
+  }
+}

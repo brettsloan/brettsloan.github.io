@@ -1,0 +1,184 @@
+/* IMPORTS */
+@font-face {font-family: 'dragonfont';src: url('../Fonts/eightbit/ancientmoderntales-a7po-webfont.woff') format('woff');font-weight: normal;font-style: normal;}
+
+/* EXTRA SMALL DEVICES (phones, 600px and down) */
+/* HTML Recorrections */
+*{margin: 0;padding: 0;}
+html{height:100%;overflow: hidden;}
+
+body {
+	height:100%;
+	display: flex;
+  font-family: 'dragonfont', sans-serif;
+  color: #f5f5f5;
+  letter-spacing: 1.5px;
+  background: hsla(31, 97%, 53%, 1);
+  background: linear-gradient(135deg, hsla(31, 97%, 53%, 1) 0%, hsla(45, 83%, 67%, 1) 100%);
+  background: -moz-linear-gradient(135deg, hsla(31, 97%, 53%, 1) 0%, hsla(45, 83%, 67%, 1) 100%);
+  background: -webkit-linear-gradient(135deg, hsla(31, 97%, 53%, 1) 0%, hsla(45, 83%, 67%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FC8B13", endColorstr="#F1CE66", GradientType=1 );
+	overflow: hidden;
+	text-align: center;
+}
+
+/* Background */
+.container{
+	width: 100%;
+	background-image: url('../Pics/Background.png');
+	background-size: 100% 100%;
+}
+.game {
+	position: relative;
+  width: 100%;
+	height: 100%;
+}
+.game a {
+	font-size: 2em;
+	filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.7));	
+}
+a {
+	text-decoration: none;
+	text-align: center;
+}
+
+a:visited {
+	text-decoration: none;
+	text-align: center;
+	color: white;
+}
+
+/* Game Objects */
+#lifeCounter{
+	background-size: 175px 60px;
+	width: 175px;
+	height: 60px;
+	position: relative;
+	left: 25px;
+	top: 25px;
+	filter: drop-shadow(2px 2px 5px black);
+}
+
+#scoreCounter{
+	position: relative;
+	text-align: center;
+	top: 35px;
+	font-size: 50px;
+	filter: drop-shadow(2px 2px 2px black);
+}
+
+#gameOver{
+  position: relative;
+  text-align: center;
+	top: 25%;
+}
+
+button {
+	background-color: rgba(0,0,0,0);
+	color: white;
+	border-style: hidden;
+	font-family: dragonfont;
+	font-size: 50px;
+	filter: drop-shadow(2px 2px 2px black);
+}
+
+button:hover {
+	color: rgba(255,255,255,0.3);
+	cursor: pointer;
+}
+
+#breadMan {
+	position: relative;
+  background-image: url('../Pics/big.png');
+  background-size: 100px 100px;
+  width: 100px;
+  height: 100px;
+  left: 15px;
+	bottom: 98px;
+	filter: drop-shadow(2px 2px 2px black);
+}
+
+#obstacle {
+	position: relative;
+  background-image: url('../Pics/Enemy4.png');
+  background-size: 80px 80px;
+  width: 80px;
+  height: 80px;
+  left: 500px;
+	bottom: 175px;
+	filter: drop-shadow(2px 2px 2px black);
+}
+
+#footer {
+	background-image: url('../Pics/footerBackground.png');
+	background-size: 100% 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+	height: 100px;
+}
+
+/* Animations */
+.jump {
+  animation: jump 0.7s linear;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 98px;
+  }
+  25% {
+    bottom: calc(98px + 50px);
+  }
+
+  50% {
+    bottom: calc(98px + 100px);
+  }
+
+  75% {
+    bottom: calc(98px + 50px);
+  }
+
+  100% {
+    bottom: 98px;
+  }
+}
+
+@keyframes obstacleMovement {
+  0% {
+    left: 100vw + 100px;
+  }
+  100%{
+    left: -50px;
+  }
+
+}
+
+@media only screen and (min-width: 400px){
+
+}
+
+@media only screen and (min-width: 640px){
+
+
+
+}
+
+@media only screen and (min-width: 768px){
+
+
+}
+/* SIZE UP - Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1024px){
+
+
+
+}
+
+@media only screen and (min-width: 1200px){
+
+
+}

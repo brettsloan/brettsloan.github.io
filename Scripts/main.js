@@ -91,6 +91,18 @@ $(document).ready(function () {
 
     });
 
+    $(function () {
+      var today = new Date();
+      var birthDate = new Date("October 23, 1992 00:01:01");
+      var age = today.getFullYear() - birthDate.getFullYear();
+      var m = today.getMonth() - birthDate.getMonth();
+      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+      }
+      accurateAge = age;
+      return age;
+    });
+
     //Swipe support for mobile
     var start = null;
     window.addEventListener("touchstart", function (event) {
@@ -189,13 +201,300 @@ $(document).ready(function () {
     //NavBar Corrections
     $(".mt-1").on('click', function () {
         $(this).toggleClass("change");
-        var value = $(".link-bar").css("bottom");
-        if (value === "40px") {
-            $(".main-wrapper").css("max-height", "calc(100vh - 195px)");
-            $(".link-bar").css("bottom", "165px");
-        } else {
-            $(".main-wrapper").css("max-height", "calc(100vh - 70px");
-            $(".link-bar").css("bottom", "40px");
-        }
+        $(".main-wrapper").toggleClass("open");
     });
+
+
+
+
+    var landingPageText = [
+      "█",
+      "H█",
+      "He█",
+      "Hel█",
+      "Hell█",
+      "Hello█",
+      "Hello █",
+      "Hello W█",
+      "Hello Wo█",
+      "Hello Wor█",
+      "Hello Worl█",
+      "Hello World█",
+      "Hello World!█",
+      "Hello World!"
+    ];
+
+    var landingPageTextTwo = [
+      "█",
+      "M█",
+      "My█",
+      "My █",
+      "My n█",
+      "My na█",
+      "My nam█",
+      "My name█",
+      "My name █",
+      "My name i█",
+      "My name is█",
+      "My name is █",
+      "My name is B█",
+      "My name is Br█",
+      "My name is Bre█",
+      "My name is Bret█",
+      "My name is Brett█",
+      "My name is Brett."
+    ];
+
+    var landingPageTextThree = [
+      "█",
+      "I█",
+      "I'█",
+      "I'm█",
+      "I'm █",
+      "I'm 3█",
+      "I'm 32█",
+      "I'm 32 █",
+      "I'm 32 y█",
+      "I'm 32 ye█",
+      "I'm 32 yea█",
+      "I'm 32 year█",
+      "I'm 32 years█",
+      "I'm 32 years █",
+      "I'm 32 years o█",
+      "I'm 32 years ol█",
+      "I'm 32 years old█",
+      "I'm 32 years old █",
+      "I'm 32 years old &█",
+      "I'm 32 years old & █",
+      "I'm 32 years old & I█",
+      "I'm 32 years old & I:"
+    ];
+
+    var text = [
+      "█",
+      "C█",
+      "Co█",
+      "Cod█",
+      "Code█",
+      "Code █",
+      "Code w█",
+      "Code we█",
+      "Code web█",
+      "Code webs█",
+      "Code websi█",
+      "Code websit█",
+      "Code website█",
+      "Code websites█",
+      "Code websites█",
+      "Code websites█",
+      "Code websites&nbsp",
+      "Code websites&nbsp",
+      "Code websites&nbsp",
+      "Code websites█",
+      "Code websites█",
+      "Code websites█",
+      "Code websites&nbsp",
+      "Code websites&nbsp",
+      "Code websites&nbsp",
+      "Code websites█",
+      "Code websites█",
+      "Code websites█",
+      "Code websites&nbsp",
+      "Code websites&nbsp",
+      "Code websites&nbsp",
+      "Code website█",
+      "Code websit█",
+      "Code websi█",
+      "Code webs█",
+      "Code web█",
+      "Code we█",
+      "Code w█",
+      "Code █",
+      "Code█",
+      "Cod█",
+      "Co█",
+      "C█",
+      "█",
+      "C█",
+      "Cr█",
+      "Cre█",
+      "Crea█",
+      "Creat█",
+      "Create█",
+      "Create █",
+      "Create a█",
+      "Create ap█",
+      "Create app█",
+      "Create appl█",
+      "Create appli█",
+      "Create applic█",
+      "Create applica█",
+      "Create applicat█",
+      "Create applicati█",
+      "Create applicatio█",
+      "Create application█",
+      "Create applications█",
+      "Create applications█",
+      "Create applications█",
+      "Create applications&nbsp",
+      "Create applications&nbsp",
+      "Create applications&nbsp",
+      "Create applications█",
+      "Create applications█",
+      "Create applications█",
+      "Create applications&nbsp",
+      "Create applications&nbsp",
+      "Create applications&nbsp",
+      "Create applications█",
+      "Create applications█",
+      "Create applications█",
+      "Create applications&nbsp",
+      "Create applications&nbsp",
+      "Create applications&nbsp",
+      "Create application█",
+      "Create applicatio█",
+      "Create applicati█",
+      "Create applicat█",
+      "Create applica█",
+      "Create applic█",
+      "Create appli█",
+      "Create app█",
+      "Create ap█",
+      "Create a█",
+      "Create █",
+      "Create█",
+      "Creat█",
+      "Crea█",
+      "Cre█",
+      "Cr█",
+      "C█",
+      "█",
+      "D█",
+      "Do█",
+      "Do █",
+      "Do o█",
+      "Do ot█",
+      "Do oth█",
+      "Do othe█",
+      "Do other█",
+      "Do other █",
+      "Do other s█",
+      "Do other sh█",
+      "Do other shi█",
+      "Do other sh█",
+      "Do other s█",
+      "Do other st█",
+      "Do other stu█",
+      "Do other stuf█",
+      "Do other stuff█",
+      "Do other stuff█",
+      "Do other stuff█",
+      "Do other stuff&nbsp",
+      "Do other stuff&nbsp",
+      "Do other stuff&nbsp",
+      "Do other stuff█",
+      "Do other stuff█",
+      "Do other stuff█",
+      "Do other stuff&nbsp",
+      "Do other stuff&nbsp",
+      "Do other stuff&nbsp",
+      "Do other stuff█",
+      "Do other stuff█",
+      "Do other stuff█",
+      "Do other stuff&nbsp",
+      "Do other stuff&nbsp",
+      "Do other stuff&nbsp",
+      "Do other stuf█",
+      "Do other stu█",
+      "Do other st█",
+      "Do other s█",
+      "Do other █",
+      "Do other█",
+      "Do othe█",
+      "Do oth█",
+      "Do ot█",
+      "Do o█",
+      "Do █",
+      "Do█",
+      "D█",
+      "█"
+      ];
+
+    var flashingBlock = [
+        "█",
+        "█",
+        "█",
+        "&nbsp",
+        "&nbsp",
+        "&nbsp"
+    ];
+
+    let activeIndex = 0;
+    var counter = 0;
+    var counterLanding = 0;
+    var counterLandingTwo = 0;
+    var counterLandingThree = 0;
+    var blinkingCounter = 0;
+    var elem = document.getElementById("rewrite-text");
+    var elemLanding = document.getElementById("rewrite-landing-text");
+    var elemLandingTwo = document.getElementById("rewrite-landing-text-two");
+    var elemLandingThree = document.getElementById("rewrite-landing-text-three");
+    var blinkingElem = document.getElementById("blinkingP");
+    var inst = setInterval(change, 100);
+    var instLanding = setInterval(changeLanding, 100);
+    var instLandingTwo = setInterval(changeLandingTwo, 100);
+    var instLandingThree = setInterval(changeLandingThree, 100);
+    var blinkingInst = setInterval(changeBlinking, 100);  
+
+
+
+    function changeLanding() {
+      elemLanding.innerHTML = landingPageText[counterLanding];
+      counterLanding++;
+      if (counterLanding >= landingPageText.length) {
+        clearInterval(instLanding);
+      }
+    }
+
+    function changeLandingTwo() {
+      if (counterLanding >= landingPageText.length) {
+        elemLandingTwo.innerHTML = landingPageTextTwo[counterLandingTwo];
+        counterLandingTwo++;
+        if (counterLandingTwo >= landingPageTextTwo.length) {
+          clearInterval(instLandingTwo);
+        }
+      }
+    }
+
+    function changeLandingThree() {
+        if (counterLandingTwo >= landingPageTextTwo.length) {
+  
+          elemLandingThree.innerHTML = landingPageTextThree[counterLandingThree];
+          counterLandingThree++;
+          if (counterLandingThree >= landingPageTextThree.length) {
+            clearInterval(instLandingThree); // uncomment this if you want to stop refreshing after one cycle
+          }
+        }
+      }
+
+      function changeBlinking() {
+        blinkingElem.innerHTML = flashingBlock[blinkingCounter];
+        blinkingCounter++;
+        if (blinkingCounter >= flashingBlock.length) {
+            blinkingCounter = 0;
+        }
+      }
+
+    function change() {
+      if (counterLandingThree >= landingPageTextThree.length) {
+
+        elem.innerHTML = text[counter];
+        counter++;
+        if (counter >= text.length) {
+          counter = 0;
+          // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+        }
+      }
+    }
+
 });

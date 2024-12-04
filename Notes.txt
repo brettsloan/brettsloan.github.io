@@ -1,0 +1,16 @@
+Personal Website Wants:
+at least 3 fun styles that will be randomly assigned as viewers enter
+About me landing page
+Projects page
+Contact page
+Interactivity with mouse - very small but noticable parralax effect for text blocks in opposite direction of mouse movement
+Building for mobile first - includes touch screen swiping and mobile browser sizing
+
+
+
+Style 1:
+Lime Green DOS systems
+"CHOOSE ONE OF THE FOLLOWING OPTIONS"
+"         <1>         ABOUT         "
+"         <2>         PROJECTS      "
+"         <3>         CONTACT       "
